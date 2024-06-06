@@ -1,6 +1,13 @@
 export const renderItems = (data) => {
-  console.log(data)
-  // Aquí comienza tu código y puedes retornar lo que tu necesites
-  return 'example';
+  
+  const element = document.createElement('ul');
+  
+  for(let i=0; i< data.length; i++){
+    const texto = document.createElement('li');
+    element.appendChild(texto);
+  }
+  return element;
+  
 };
+
 
