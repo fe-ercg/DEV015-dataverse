@@ -1,5 +1,4 @@
 export default [
- 
     {
       id: "miles_morales_001",
       name: "Miles Morales",
@@ -313,6 +312,3 @@ export default [
       }
     }
   ];
-  
-
-
