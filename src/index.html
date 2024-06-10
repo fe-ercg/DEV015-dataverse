@@ -13,11 +13,32 @@
       <h2>
         Personajes
       </h2>
-      <div id= "box" class="box-characters"></div>
+
+      <label for="sort">Por Orden:</label>
+      <select data-testid="select-sort" id="sort" name="sort">
+        <option value="asc">Ascendente</option>
+        <option value="desc">Descendente</option>
+      </select>
+
+      <label>Filtar por: </label>
+      <label for="gender">Genero</label>
+      <input type="radio" name="filtro" id="gender"/> 
+      <label for="age">Edad</label>
+      <input type="radio" name="filtro" id="age"/>
+
+      <button data-testid="button-clear">Reset</button>
+
+      <div id= "root" class="box-characters">
+        <ul>
+          <li itemtype="Spiderverse" itemscope></li>
+        </ul>
+      </div>
     </main>
     <footer>
       <p>autores</p>
     </footer>
+
     <script src="main.js" type="module"></script>
+  
   </body>
 </html>
