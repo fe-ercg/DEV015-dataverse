@@ -1,17 +1,18 @@
+
 export const renderItems = (data) => {
-  const render = document.querySelector('#box');
-  
+
+
   const ul = document.createElement('ul');
-  render.appendChild(ul);
 
   function crearElemento(data){
+    
     const li = document.createElement('li');
+    li.setAttribute('itemtype', 'Spiderverse')
+    li.setAttribute('itemscope', '');
     li.classList.add('item-lista')
     ul.appendChild(li);
 
     const dl = document.createElement('dl');
-    dl.setAttribute('itemscope', '');
-    dl.setAttribute('itemtype', 'Spiderverse');
     li.appendChild(dl);
 
     //IMAGEN
@@ -86,5 +87,8 @@ export const renderItems = (data) => {
   }
 
   data.forEach(crearElemento);
+
+  return ul
+
 };
 
