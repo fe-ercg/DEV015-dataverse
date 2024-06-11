@@ -13,25 +13,34 @@
       <h2>
         Personajes
       </h2>
+      <div class="controls">
+        <div class="controls-sort">
+          <label for="sort">Ordenar por:</label>
+          <select data-testid="select-sort" id="sort" name="sort">
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>
+          </select>
+        </div>
+        
+        <!-- acordarse del datatesting -->
+        <div class="controls-filter">
+          <label>Filtar por: </label>
+          <label for="gender">Genero</label>
+          <input type="radio" name="filtro" id="gender"/> 
+          <label for="age">Edad</label>
+          <input type="radio" name="filtro" id="age"/>
+        </div>
+        
+        <button data-testid="button-clear">Reset</button>
+        
+      </div>
 
-      <label for="sort">Por Orden:</label>
-      <select data-testid="select-sort" id="sort" name="sort">
-        <option value="asc">Ascendente</option>
-        <option value="desc">Descendente</option>
-      </select>
-
-      <label>Filtar por: </label>
-      <label for="gender">Genero</label>
-      <input type="radio" name="filtro" id="gender"/> 
-      <label for="age">Edad</label>
-      <input type="radio" name="filtro" id="age"/>
-
-      <button data-testid="button-clear">Reset</button>
 
       <div id= "root" class="box-characters">
+        <!-- corrige el test pero feo
         <ul>
           <li itemtype="Spiderverse" itemscope></li>
-        </ul>
+        </ul> -->
       </div>
     </main>
     <footer>
