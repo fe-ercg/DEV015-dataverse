@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Dataverse</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Spiderverse</h1>
-    </header>
-    <main>
-      <h2>
-        Personajes
-      </h2>
-      <div class="controls">
-        <div class="controls-sort">
-          <label for="sort">Ordenar por:</label>
-          <select data-testid="select-sort" id="sort" name="sort">
-            <option value="asc">Ascendente</option>
-            <option value="desc">Descendente</option>
-          </select>
-        </div>
-        
-        <!-- acordarse del datatesting -->
-        <div class="controls-filter">
-          <label>Filtar por: </label>
-          <label for="gender">Genero</label>
-          <input type="radio" name="filtro" id="gender"/> 
-          <label for="age">Edad</label>
-          <input type="radio" name="filtro" id="age"/>
-        </div>
-        
-        <button data-testid="button-clear">Reset</button>
-        
+
+<head>
+  <meta charset="utf-8">
+  <title>Dataverse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Spiderverse</h1>
+  </header>
+  <main>
+    <h2>
+      Personajes
+    </h2>
+
+    <nav class="controls">
+
+      <div class="controls-sort">
+        <label for="sort">Ordenar por:</label>
+        <select data-testid="select-sort" id="sort" name="sort">
+          <option value="" disabled selected>Selecciona</option>
+          <option value="asc">Ascendente</option>
+          <option value="desc">Descendente</option>
+        </select>
       </div>
 
+      <!-- acordarse del datatesting -->
+      <div class="controls-filter">
+        <label>Filtar por: </label>
+        <select data-testid="select-filter" name="name" placeholder="Selecciona">
+          <option value="" disabled selected>Selecciona</option>
+          <optgroup label="Genero">
+            <option value="subopcion1-1" class="submenu-option" >Masculino</option>
+            <option value="subopcion1-2" class="submenu-option">Femenino</option>
+          </optgroup>
+          <optgroup label="Edad">
+            <option value="subopcion2-1" class="submenu-option">Menores de 20</option>
+            <option value="subopcion2-2" class="submenu-option">Menores de 30</option>
+            <option value="subopcion2-2" class="submenu-option">Mayores de 30</option>
+          </optgroup>
 
-      <div id= "root" class="box-characters">
-        <!-- corrige el test pero feo
+
+
+
+        </select>
+      </div>
+
+      <button data-testid="button-clear">Reset</button>
+
+  
+
+    </nav>
+
+    <div id="root" class="box-characters">
+      <!-- corrige el test pero feo
         <ul>
           <li itemtype="Spiderverse" itemscope></li>
         </ul> -->
-      </div>
-    </main>
-    <footer>
-      <p>autores</p>
-    </footer>
+    </div>
+  </main>
+  <footer>
+    <p>autores</p>
+  </footer>
 
-    <script src="main.js" type="module"></script>
-  
-  </body>
+  <script src="main.js" type="module"></script>
+
+</body>
+
 </html>
