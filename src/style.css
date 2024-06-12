@@ -39,7 +39,7 @@ ul{
     gap: 2rem;
 }
 
-li .item-lista{
+.item-lista{
     list-style: none;
     display: flex;
     flex-direction: column;
