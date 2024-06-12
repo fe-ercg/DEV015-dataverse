@@ -12,14 +12,16 @@ export const renderItems = (data) => {
     li.classList.add('item-lista')
     ul.appendChild(li);
 
-    const dl = document.createElement('dl');
-    li.appendChild(dl);
-
+    
     //IMAGEN
     const personajeImagen = document.createElement('img');
     personajeImagen.setAttribute('src', data.imageUrl);
     personajeImagen.setAttribute('alt', data.name);
-    dl.appendChild(personajeImagen);
+    li.appendChild(personajeImagen);
+    
+    //TEXTO-------------
+    const dl = document.createElement('dl');
+    li.appendChild(dl);
 
     //NAME
     const dtNombre = document.createElement('dt');
