@@ -1,314 +1,290 @@
 export default [
-    {
-      id: "miles_morales_001",
-      name: "Miles Morales",
-      shortDescription: "El joven Spider-Man de Brooklyn.",
-      description: "Miles Morales es un adolescente afro-latino de Brooklyn que se convierte en Spider-Man después de ser mordido por una araña radiactiva. Él lucha por encontrar su lugar en el mundo mientras equilibra su vida escolar, su familia y su responsabilidad como héroe. Con el tiempo, aprende a aceptar su papel y a dominar sus habilidades únicas. Miles posee habilidades similares a las de Peter Parker, como trepar paredes y el sentido arácnido, pero también puede volverse invisible y generar explosiones de veneno. Su valentía y determinación lo hacen un digno sucesor del manto de Spider-Man.",
-      imageUrl: "https://example.com/miles_morales.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 16,
-        city: "Brooklyn"
-      }
-    },
-    {
-      id: "peter_parker_002",
-      name: "Peter Parker",
-      shortDescription: "El Spider-Man original y mentor de Miles.",
-      description: "Peter Parker es el Spider-Man original que sirve como mentor para Miles Morales. Después de años de luchar contra el crimen en Nueva York, Peter tiene una gran experiencia y conocimiento sobre lo que significa ser Spider-Man. A pesar de sus propios problemas personales, se esfuerza por guiar a Miles y ayudarlo a convertirse en un héroe responsable. Peter es conocido por su ingenio rápido y su determinación inquebrantable. Sus habilidades incluyen trepar paredes, una fuerza y agilidad mejoradas, y el famoso sentido arácnido. Es un líder natural y un héroe venerado.",
-      imageUrl: "https://example.com/peter_parker.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 28,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "gwen_stacy_003",
-      name: "Gwen Stacy",
-      shortDescription: "Spider-Woman de un universo alternativo.",
-      description: "Gwen Stacy es la Spider-Woman de su propio universo alternativo. Después de la muerte de su mejor amigo Peter Parker en su dimensión, Gwen asume la identidad de Spider-Woman para proteger a los inocentes y luchar contra el crimen. Es una baterista talentosa y una heroína fuerte e independiente. Gwen forma parte del equipo multiversal de Spider-Héroes que se unen para enfrentar amenazas comunes. Sus habilidades son similares a las de otros Spider-Personas, incluyendo trepar paredes, el sentido arácnido y una gran agilidad. Su valentía y compasión la destacan.",
-      imageUrl: "https://example.com/gwen_stacy.jpg",
-      facts: {
-        gender: "Femenino",
-        species: "Humana",
-        age: 17,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_noir_004",
-      name: "Spider-Man Noir",
-      shortDescription: "El Spider-Man de una dimensión en blanco y negro.",
-      description: "Spider-Man Noir es el Spider-Man de una dimensión en blanco y negro, ambientada en la Gran Depresión de los años 1930. Es un detective sombrío y serio, conocido por su enfoque duro y su habilidad para resolver crímenes en un mundo lleno de corrupción. Su traje es negro y su estilo de lucha es brutal y efectivo. A pesar de las diferencias en sus orígenes, comparte los mismos poderes básicos que otros Spider-Personas, como trepar paredes y el sentido arácnido. Su experiencia en investigaciones y su valentía lo hacen un miembro valioso del equipo multiversal.",
-      imageUrl: "https://example.com/spider_noir.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 35,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "peni_parker_005",
-      name: "Peni Parker",
-      shortDescription: "La piloto del robot SP//dr en su dimensión.",
-      description: "Peni Parker es una adolescente que pilota el robot SP//dr en su dimensión. Después de la muerte de su padre, quien originalmente pilotaba el robot, Peni asume el control del SP//dr y se vincula psíquicamente con una araña radiactiva que actúa como su copiloto. Es una joven inteligente y valiente, capaz de enfrentarse a cualquier desafío con su ingenio y habilidades de combate. Su mundo tiene una estética futurista y de anime, diferenciándose de las dimensiones de otros Spider-Héroes. Peni aporta un enfoque único y tecnológico al equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/peni_parker.jpg",
-      facts: {
-        gender: "Femenino",
-        species: "Humana",
-        age: 14,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_ham_006",
-      name: "Spider-Ham",
-      shortDescription: "El Spider-Man de una dimensión de dibujos animados.",
-      description: "Spider-Ham es el Spider-Man de una dimensión de dibujos animados, donde los animales antropomórficos son comunes. Su verdadero nombre es Peter Porker, y es una parodia humorística de Spider-Man. A pesar de su apariencia cómica, Spider-Ham es un héroe valiente y capaz. Sus habilidades incluyen trepar paredes, el sentido arácnido y una gran agilidad. Su estilo de lucha incorpora elementos de comedia física, y su sentido del humor aligera muchas situaciones tensas. Aporta un toque de humor y ligereza al equipo de Spider-Héroes, mostrando que el heroísmo puede tener muchas formas.",
-      imageUrl: "https://example.com/spider_ham.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Cerdo antropomórfico",
-        age: 25,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_gwen_007",
-      name: "Spider-Gwen",
-      shortDescription: "La versión alternativa de Gwen Stacy como Spider-Woman.",
-      description: "Spider-Gwen, también conocida como Ghost-Spider, es una versión alternativa de Gwen Stacy que se convierte en Spider-Woman en su dimensión. Después de ser mordida por una araña radiactiva, Gwen asume el manto de héroe y lucha contra el crimen mientras equilibra su vida personal y su carrera como músico. Es una luchadora ágil y poderosa con habilidades similares a las de otros Spider-Héroes. Su valentía y determinación la convierten en una líder nata. Gwen se une al equipo de Spider-Héroes multiversales para enfrentar amenazas que ponen en peligro a todos sus mundos.",
-      imageUrl: "https://example.com/spider_gwen.jpg",
-      facts: {
-        gender: "Femenino",
-        species: "Humana",
-        age: 17,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_woman_008",
-      name: "Spider-Woman",
-      shortDescription: "Jessica Drew, la Spider-Woman original.",
-      description: "Jessica Drew, conocida como Spider-Woman, es la versión original del personaje en el universo Marvel. Fue sometida a un tratamiento con suero de araña que le otorgó habilidades arácnidas, incluyendo fuerza mejorada, la capacidad de adherirse a superficies y generar bio-rayos de energía. Jessica es una agente de S.H.I.E.L.D. y una detective privada, utilizando sus habilidades para resolver casos y combatir el crimen. Es una mujer fuerte y decidida, comprometida con la justicia. Su experiencia y habilidades únicas la convierten en una valiosa aliada en la lucha contra las amenazas que enfrenta el equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_woman.jpg",
-      facts: {
-        gender: "Femenino",
-        species: "Humana",
-        age: 30,
-        city: "Londres"
-      }
-    },
-    {
-      id: "spider_uk_009",
-      name: "Spider-UK",
-      shortDescription: "Billy Braddock, el Spider-Man del Reino Unido.",
-      description: "Spider-UK, cuyo verdadero nombre es Billy Braddock, es el Spider-Man del Reino Unido y miembro del cuerpo de los Captain Britain Corps. Billy es un guardián del multiverso, encargado de proteger su dimensión y otras de amenazas interdimensionales. Sus habilidades son similares a las de otros Spider-Héroes, pero también tiene acceso a tecnología avanzada y recursos del cuerpo de los Captain Britain Corps. Es un héroe valiente y leal, comprometido con la protección de su mundo y otros. Su conocimiento del multiverso lo convierte en un miembro crucial del equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_uk.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 25,
-        city: "Londres"
-      }
-    },
-    {
-      id: "spider_punk_010",
-      name: "Spider-Punk",
-      shortDescription: "Hobart Brown, el rebelde Spider-Man punk.",
-      description: "Spider-Punk, cuyo verdadero nombre es Hobart Brown, es un Spider-Man de una dimensión alternativa donde adopta una estética punk rock. Es un rebelde que lucha contra un régimen opresivo utilizando sus habilidades arácnidas y su guitarra eléctrica como arma. Hobart es un símbolo de resistencia y libertad, inspirando a otros a luchar contra la injusticia. Sus poderes son similares a los de otros Spider-Héroes, pero su actitud punk y su enfoque no convencional lo hacen único. Su determinación y espíritu indomable lo convierten en un valioso miembro del equipo multiversal de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_punk.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 19,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_girl_011",
-      name: "Spider-Girl",
-      shortDescription: "Mayday Parker, la hija de Peter Parker.",
-      description: "Mayday Parker, conocida como Spider-Girl, es la hija de Peter Parker y Mary Jane Watson en una dimensión alternativa. Después de descubrir que heredó las habilidades arácnidas de su padre, Mayday decide seguir sus pasos y convertirse en una heroína. Es una adolescente valiente y decidida que equilibra su vida escolar con sus responsabilidades como Spider-Girl. Sus habilidades incluyen fuerza mejorada, trepar paredes y el sentido arácnido. Mayday lucha por mantener el legado de su padre y proteger a los inocentes. Su juventud y entusiasmo aportan una energía fresca al equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_girl.jpg",
-      facts: {
-        gender: "Femenino",
-        species: "Humana",
-        age: 16,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_man_2099_012",
-      name: "Spider-Man 2099",
-      shortDescription: "Miguel O'Hara, el Spider-Man del futuro.",
-      description: "Spider-Man 2099, cuyo verdadero nombre es Miguel O'Hara, es el Spider-Man del futuro en el año 2099. Es un genetista que accidentalmente se infunde ADN de araña, adquiriendo habilidades arácnidas. Miguel posee fuerza mejorada, garras retráctiles y la capacidad de ver en la oscuridad. Trabaja para proteger la ciudad de Nueva York en un futuro distópico y tecnológicamente avanzado. Miguel es un héroe valiente y decidido, luchando contra corporaciones corruptas y amenazas tecnológicas. Su conocimiento del futuro y su avanzada tecnología lo convierten en un miembro crucial del equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_man_2099.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 30,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "silk_013",
-      name: "Silk",
-      shortDescription: "Cindy Moon, otra sobreviviente de la picadura de araña.",
-      description: "Cindy Moon, conocida como Silk, es otra persona que fue mordida por la misma araña radiactiva que le dio sus poderes a Peter Parker. Cindy fue descubierta años después, tras ser liberada de un búnker donde se escondía, asumió el papel de heroína bajo el nombre de Silk. Sus habilidades incluyen trepar paredes, un sentido arácnido altamente desarrollado y la capacidad de tejer telarañas orgánicas desde sus dedos. Es una heroína determinada que lucha por encontrar su lugar en el mundo mientras protege a los inocentes. Su historia y habilidades la convierten en un miembro valioso del equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/silk.jpg",
-      facts: {
-        gender: "Femenino",
-        species: "Humana",
-        age: 28,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_woman_ii_014",
-      name: "Spider-Woman II",
-      shortDescription: "Julia Carpenter, la segunda Spider-Woman.",
-      description: "Julia Carpenter, conocida como la segunda Spider-Woman, recibió sus poderes a través de un experimento gubernamental que involucraba extractos de plantas y veneno de araña. Sus habilidades incluyen fuerza mejorada, trepar paredes y la capacidad de crear telarañas psíquicas. Julia ha trabajado como miembro de varios equipos de superhéroes, incluyendo los Vengadores y los Guardianes de la Galaxia. Es una heroína experimentada y una luchadora valiente. Su dedicación a la justicia y sus habilidades únicas la convierten en una aliada importante en la lucha contra las amenazas que enfrenta el equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_woman_ii.jpg",
-      facts: {
-        gender: "Femenino",
-        species: "Humana",
-        age: 32,
-        city: "Denver"
-      }
-    },
-    {
-      id: "scarlet_spider_015",
-      name: "Scarlet Spider",
-      shortDescription: "Ben Reilly, el clon de Peter Parker.",
-      description: "Ben Reilly, conocido como Scarlet Spider, es un clon de Peter Parker creado por el villano Jackal. Aunque inicialmente fue confundido sobre su identidad, Ben eventualmente aceptó su papel como héroe y adoptó el nombre de Scarlet Spider. Sus habilidades son idénticas a las de Peter Parker, incluyendo fuerza mejorada, trepar paredes y el sentido arácnido. Ben es un héroe valiente y decidido, comprometido con la protección de los inocentes. Su historia de redención y su lucha por encontrar su lugar en el mundo lo hacen un personaje complejo y un valioso miembro del equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/scarlet_spider.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 27,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "superior_spider_man_016",
-      name: "Superior Spider-Man",
-      shortDescription: "Otto Octavius en el cuerpo de Peter Parker.",
-      description: "Superior Spider-Man es la identidad adoptada por Otto Octavius después de transferir su mente al cuerpo de Peter Parker. Con el deseo de demostrar que puede ser un mejor Spider-Man que Peter, Otto adopta un enfoque más metódico y a veces despiadado para combatir el crimen. Aunque sus métodos son controvertidos, sus intenciones son nobles. Otto conserva las habilidades de Spider-Man, incluyendo fuerza mejorada, trepar paredes y el sentido arácnido, y combina estos poderes con su brillantez científica. Su historia de redención y su lucha por ser un mejor héroe lo hacen un personaje único y fascinante.",
-      imageUrl: "https://example.com/superior_spider_man.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 40,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_man_india_017",
-      name: "Spider-Man India",
-      shortDescription: "Pavitr Prabhakar, el Spider-Man de India.",
-      description: "Pavitr Prabhakar es el Spider-Man de India, con una historia similar a la de Peter Parker, pero ambientada en el contexto cultural y social de la India. Después de recibir poderes de una figura mística, Pavitr se convierte en Spider-Man y lucha contra el crimen en su ciudad. Sus habilidades incluyen fuerza mejorada, trepar paredes y el sentido arácnido. Pavitr es un joven valiente y compasivo, decidido a proteger a sus seres queridos y su comunidad. Su enfoque único y su perspectiva cultural aportan una nueva dimensión al legado de Spider-Man. Es un miembro valioso del equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_man_india.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 18,
-        city: "Mumbai"
-      }
-    },
-    {
-      id: "spider_woman_iii_018",
-      name: "Spider-Woman III",
-      shortDescription: "Martha Franklin, la tercera Spider-Woman.",
-      description: "Martha Franklin, conocida como la tercera Spider-Woman, obtuvo sus poderes a través de un ritual místico que le otorgó habilidades arácnidas. Martha posee fuerza mejorada, la capacidad de trepar paredes y generar explosiones de energía arácnida. Es una joven heroína que lucha por encontrar su lugar en el mundo de los superhéroes mientras protege a los inocentes. Su valentía y determinación la convierten en una luchadora eficaz contra el crimen. Martha se une al equipo de Spider-Héroes para enfrentar amenazas mayores y aprender de otros héroes experimentados. Su entusiasmo y dedicación son inspiradores.",
-      imageUrl: "https://example.com/spider_woman_iii.jpg",
-      facts: {
-        gender: "Femenino",
-        species: "Humana",
-        age: 20,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_man_j_019",
-      name: "Spider-Man J",
-      shortDescription: "Sho Amano, el Spider-Man de Japón.",
-      description: "Sho Amano, conocido como Spider-Man J, es el Spider-Man de Japón. Inspirado por las historias de Spider-Man de América, Sho crea su propio traje y lucha contra el crimen en Tokio. Aunque no tiene habilidades superhumanas, su valentía y habilidades en artes marciales lo convierten en un héroe formidable. Sho es un joven dedicado y valiente, dispuesto a arriesgarlo todo para proteger a su ciudad y a sus seres queridos. Su historia es un testimonio de que cualquiera puede ser un héroe, independientemente de sus habilidades. Aporta una perspectiva cultural única al equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_man_j.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 16,
-        city: "Tokio"
-      }
-    },
-    {
-      id: "spider_moon_man_020",
-      name: "Spider-Moon Man",
-      shortDescription: "El Spider-Man de una colonia lunar.",
-      description: "Spider-Moon Man es el Spider-Man de una colonia lunar en un futuro distante. Su identidad real es desconocida, pero se sabe que es un científico que adquiere habilidades arácnidas a través de un experimento con radiación lunar. Posee fuerza mejorada, la capacidad de trepar paredes y resistencia a las duras condiciones del espacio. Spider-Moon Man protege la colonia lunar de amenazas extraterrestres y mantiene el orden en su comunidad. Su valentía y habilidades únicas lo convierten en un héroe crucial en un entorno inhóspito. Su historia y su contexto futurista aportan una nueva dimensión al legado de Spider-Man.",
-      imageUrl: "https://example.com/spider_moon_man.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 35,
-        city: "Colonia Lunar"
-      }
-    },
-    {
-      id: "spider_man_2211_021",
-      name: "Spider-Man 2211",
-      shortDescription: "Max Borne, el Spider-Man del año 2211.",
-      description: "Max Borne, conocido como Spider-Man 2211, es el Spider-Man del futuro en el año 2211. Es un científico y agente de la policía temporal encargado de proteger la línea temporal de amenazas. Posee habilidades arácnidas mejoradas gracias a la tecnología avanzada, incluyendo fuerza incrementada, la capacidad de trepar paredes y dispositivos de manipulación temporal. Su traje está equipado con tecnología de punta que le permite enfrentar cualquier desafío. Un héroe decidido y valiente, comprometido con la protección del tiempo y la justicia. Su conocimiento del futuro y su avanzada tecnología lo convierten en un miembro crucial del equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_man_2211.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 40,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_man_unlimited_022",
-      name: "Spider-Man Unlimited",
-      shortDescription: "Peter Parker en una tierra alternativa y avanzada.",
-      description: "Spider-Man Unlimited es una versión de Peter Parker en una tierra alternativa y tecnológicamente avanzada. En esta dimensión, Peter utiliza un traje con tecnología avanzada que mejora sus habilidades arácnidas, incluyendo fuerza mejorada, trepar paredes y el sentido arácnido. El traje también le proporciona capacidades adicionales como invisibilidad y resistencia mejorada. Peter lucha contra amenazas avanzadas y mantiene el orden en esta versión futurista de Nueva York. Su valentía y habilidades tecnológicas lo convierten en un héroe formidable y un líder natural. Aporta experiencia y conocimiento al equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_man_unlimited.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 30,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_man_ultimate_023",
-      name: "Spider-Man Ultimate",
-      shortDescription: "Miles Morales en la línea Ultimate.",
-      description: "Spider-Man Ultimate es Miles Morales en la línea Ultimate del universo Marvel. Después de la muerte de Peter Parker en su dimensión, Miles toma el manto de Spider-Man para honrar su legado. Sus habilidades incluyen fuerza mejorada, trepar paredes, el sentido arácnido, invisibilidad y explosiones de veneno. Miles es un joven valiente y decidido que lucha por proteger su ciudad y sus seres queridos. Su historia de crecimiento y aceptación de su papel como héroe lo convierten en un personaje inspirador. Miles aporta una nueva perspectiva y energía al legado de Spider-Man y al equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_man_ultimate.jpg",
-      facts: {
-        gender: "Masculino",
-        species: "Humano",
-        age: 16,
-        city: "Nueva York"
-      }
-    },
-    {
-      id: "spider_woman_iv_024",
-      name: "Spider-Woman IV",
-      shortDescription: "Charlotte Witter, la cuarta Spider-Woman.",
-      description: "Charlotte Witter, conocida como la cuarta Spider-Woman, es una villana convertida en heroína que obtuvo sus poderes a través de un experimento genético. Inicialmente utilizó sus habilidades para el mal, pero eventualmente encontró redención y se unió al lado de los héroes. Charlotte posee habilidades arácnidas mejoradas, incluyendo fuerza incrementada, trepar paredes y la capacidad de generar telarañas orgánicas. Su historia de redención y su lucha por convertirse en una mejor persona la convierten en un personaje complejo y fascinante. Es una aliada valiosa en la lucha contra las amenazas que enfrenta el equipo de Spider-Héroes.",
-      imageUrl: "https://example.com/spider_woman_iv.jpg",
-      facts: {
-        gender: "Femenino",
-        species: "Humana",
-        age: 29,
-        city: "Los Ángeles"
-      }
+  {
+    id: "peter_parker_spiderman",
+    name: "Peter Parker",
+    shortDescription: "El asombroso Spider-Man del universo principal.",
+    description: "Peter Parker es el superhéroe original Spider-Man del universo principal, conocido como Tierra-616. Tras ser mordido por una araña radiactiva, adquirió habilidades sobrehumanas. Con gran poder, llega una gran responsabilidad. Peter usa sus poderes para proteger a Nueva York y luchar contra villanos como el Duende Verde y Venom, mientras equilibra su vida personal y profesional como fotógrafo y científico. Su valor y dedicación lo convierten en un héroe emblemático del Spiderverse.",
+    imageUrl: "https://example.com/peter_parker.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 28,
+      city: "Nueva York"
     }
-  ];
+  },
+  {
+    id: "miles_morales_spiderman",
+    name: "Miles Morales",
+    shortDescription: "El joven Spider-Man del universo Ultimate.",
+    description: "Miles Morales es un joven que asume el manto de Spider-Man en el universo Ultimate. Después de ser mordido por una araña genéticamente modificada, desarrolla habilidades similares a las de Peter Parker, junto con otras únicas como la invisibilidad y el veneno. Miles es un héroe determinado y valiente, que lucha por justicia y equidad, llevando el legado de Spider-Man a nuevos horizontes. Su historia de crecimiento y superación lo convierte en una inspiración para muchos.",
+    imageUrl: "https://example.com/miles_morales.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 16,
+      city: "Brooklyn"
+    }
+  },
+  {
+    id: "gwen_stacy_spiderwoman",
+    name: "Gwen Stacy",
+    shortDescription: "Spider-Woman de un universo alternativo.",
+    description: "Gwen Stacy, también conocida como Spider-Woman o Spider-Gwen, proviene de un universo alternativo donde ella fue mordida por una araña radiactiva en lugar de Peter Parker. Con sus habilidades arácnidas, Gwen lucha contra el crimen y busca redimirse por la muerte de su amigo Peter. Su valentía y determinación, combinadas con su talento musical como baterista, la convierten en una heroína única y admirada en el Spiderverse.",
+    imageUrl: "https://example.com/gwen_stacy.jpg",
+    facts: {
+      gender: "femenino",
+      species: "humano",
+      age: 18,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "miguel_ohara_spiderman2099",
+    name: "Miguel O'Hara",
+    shortDescription: "Spider-Man del año 2099.",
+    description: "Miguel O'Hara es el Spider-Man del futuro, del año 2099. Es un genetista brillante que, tras un accidente en su laboratorio, adquiere habilidades arácnidas. Miguel lucha contra el crimen y la corrupción en una Nueva York futurista, enfrentándose a peligros tecnológicos y corporaciones malignas. Su traje avanzado y sus habilidades, como garras afiladas y visión mejorada, lo hacen un héroe formidable y único en el Spiderverse.",
+    imageUrl: "https://example.com/miguel_ohara.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 35,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "jessica_drew_spiderwoman",
+    name: "Jessica Drew",
+    shortDescription: "La primera Spider-Woman del universo principal.",
+    description: "Jessica Drew es la primera Spider-Woman del universo principal, conocida como Tierra-616. Después de un accidente que la expone a uranio y un suero de araña experimental, desarrolla habilidades similares a las de Spider-Man. Jessica es una heroína valiente y decidida, que ha sido parte de equipos como los Vengadores y los Agentes de S.H.I.E.L.D. Su fuerza, velocidad y agilidad, junto con su sentido de justicia, la hacen una figura importante en el Spiderverse.",
+    imageUrl: "https://example.com/jessica_drew.jpg",
+    facts: {
+      gender: "femenino",
+      species: "humano",
+      age: 30,
+      city: "Londres"
+    }
+  },
+  {
+    id: "ben_reilly_scarlet_spider",
+    name: "Ben Reilly",
+    shortDescription: "El clon de Spider-Man conocido como Scarlet Spider.",
+    description: "Ben Reilly es un clon de Peter Parker creado por el villano Chacal. Adoptando el nombre de Scarlet Spider, Ben lucha para demostrar su valía como héroe. Aunque su origen está plagado de conflictos y dudas sobre su identidad, Ben muestra una gran valentía y dedicación al proteger a los inocentes. Su traje distintivo y habilidades idénticas a las de Spider-Man lo hacen un aliado formidable en el Spiderverse.",
+    imageUrl: "https://example.com/ben_reilly.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 28,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "cindy_moon_silk",
+    name: "Cindy Moon",
+    shortDescription: "Conocida como Silk, otra mordida por la araña radiactiva.",
+    description: "Cindy Moon, también conocida como Silk, fue mordida por la misma araña radiactiva que mordió a Peter Parker. Después de años en aislamiento, Cindy emerge con habilidades arácnidas únicas y una conexión especial con Spider-Man. Con su fuerza, velocidad y telarañas orgánicas, Cindy lucha contra el crimen y busca encontrar su lugar en el mundo. Su determinación y resiliencia la convierten en una heroína destacada en el Spiderverse.",
+    imageUrl: "https://example.com/cindy_moon.jpg",
+    facts: {
+      gender: "femenino",
+      species: "humano",
+      age: 28,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "spider_ham_peter_porker",
+    name: "Peter Porker",
+    shortDescription: "Spider-Ham, el Spider-Man del mundo animal.",
+    description: "Peter Porker, también conocido como Spider-Ham, proviene de un universo alternativo donde los personajes son animales antropomórficos. Originalmente un cerdo mordido por una araña radiactiva, Peter desarrolla habilidades arácnidas y lucha contra el crimen con un toque de humor. Su valentía y espíritu indomable, combinados con sus aventuras cómicas, lo convierten en un personaje único y querido en el Spiderverse.",
+    imageUrl: "https://example.com/peter_porker.jpg",
+    facts: {
+      gender: "masculino",
+      species: "cerdo",
+      age: 20,
+      city: "New York"
+    }
+  },
+  {
+    id: "spider_man_noir",
+    name: "Spider-Man Noir",
+    shortDescription: "Spider-Man de un universo en la era de la Gran Depresión.",
+    description: "Spider-Man Noir es una versión de Spider-Man que opera en un universo alternativo ambientado durante la Gran Depresión. Con un traje negro y un enfoque más oscuro y serio, lucha contra el crimen y la corrupción en una Nueva York sombría y peligrosa. Aunque sus métodos son más duros y su mundo más cruel, sigue siendo un defensor de los inocentes y un símbolo de esperanza en su tiempo.",
+    imageUrl: "https://example.com/spider_man_noir.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 30,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "spider_girl_may_parker",
+    name: "May Parker",
+    shortDescription: "Spider-Girl, hija de Peter Parker y Mary Jane.",
+    description: "May Parker, también conocida como Spider-Girl, es la hija de Peter Parker y Mary Jane en un universo alternativo. Heredando las habilidades arácnidas de su padre, May decide seguir sus pasos y convertirse en una heroína. Con una mezcla de juventud y determinación, enfrenta desafíos y enemigos con valentía, mientras lucha por encontrar su identidad y balancear su vida como adolescente y superhéroe.",
+    imageUrl: "https://example.com/may_parker.jpg",
+    facts: {
+      gender: "femenino",
+      species: "humano",
+      age: 16,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "pavitr_prabhakar_spiderman_india",
+    name: "Pavitr Prabhakar",
+    shortDescription: "Spider-Man de la India, con habilidades arácnidas.",
+    description: "Pavitr Prabhakar es el Spider-Man de la India, originario de un pequeño pueblo. Después de recibir poderes de un antiguo yogui, Pavitr adopta el manto de Spider-Man para proteger a su comunidad de villanos y amenazas. Su historia está llena de valentía y lucha por la justicia, mientras equilibra sus responsabilidades familiares y su vida como superhéroe. Su conexión con la cultura india lo hace único en el Spiderverse.",
+    imageUrl: "https://example.com/pavitr_prabhakar.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 17,
+      city: "Mumbai"
+    }
+  },
+  {
+    id: "spider_woman_mary_jane",
+    name: "Mary Jane Watson",
+    shortDescription: "Mary Jane como Spider-Woman en un universo alternativo.",
+    description: "En un universo alternativo, Mary Jane Watson adquiere poderes arácnidos y se convierte en Spider-Woman. Con sus nuevas habilidades, lucha junto a Peter Parker y otros héroes para proteger su mundo. Su valentía, inteligencia y fuerte sentido de la justicia la convierten en una heroína formidable. Su relación con Peter y su papel como Spider-Woman añaden una nueva dimensión a su carácter en el Spiderverse.",
+    imageUrl: "https://example.com/mary_jane.jpg",
+    facts: {
+      gender: "femenino",
+      species: "humano",
+      age: 28,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "spider_man_uk",
+    name: "Billy Braddock",
+    shortDescription: "Spider-Man de Gran Bretaña, también conocido como Spider-UK.",
+    description: "Billy Braddock, conocido como Spider-UK, es el Spider-Man de Gran Bretaña en un universo alternativo. Como miembro del Captain Britain Corps, Billy usa sus habilidades arácnidas para proteger su mundo de amenazas interdimensionales. Su valentía, habilidades y dedicación lo hacen un héroe destacado. Su misión de mantener la paz y justicia en su universo y más allá lo convierte en una figura clave en el Spiderverse.",
+    imageUrl: "https://example.com/billy_braddock.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 25,
+      city: "Londres"
+    }
+  },
+  {
+    id: "mayday_parker_spidergirl",
+    name: "Mayday Parker",
+    shortDescription: "Hija de Peter Parker en un futuro alternativo.",
+    description: "Mayday Parker, también conocida como Spider-Girl, es la hija de Peter Parker y Mary Jane en un futuro alternativo. Heredando las habilidades arácnidas de su padre, Mayday decide seguir sus pasos como superhéroe. Con valentía y determinación, enfrenta villanos y protege su ciudad, todo mientras maneja los desafíos de ser una adolescente. Su historia es un homenaje al legado de Spider-Man, mostrando que el heroísmo es una herencia.",
+    imageUrl: "https://example.com/mayday_parker.jpg",
+    facts: {
+      gender: "femenino",
+      species: "humano",
+      age: 16,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "spider_woman_julia_carpenter",
+    name: "Julia Carpenter",
+    shortDescription: "Conocida como Spider-Woman y más tarde como Madame Web.",
+    description: "Julia Carpenter es una heroína que asume el manto de Spider-Woman y, posteriormente, de Madame Web. Con habilidades arácnidas obtenidas de un suero experimental, Julia lucha contra el crimen y la injusticia. Su viaje la lleva a roles diversos y complejos, enfrentando desafíos tanto físicos como mentales. Su perseverancia y capacidad de adaptación la convierten en una figura respetada y vital en el Spiderverse.",
+    imageUrl: "https://example.com/julia_carpenter.jpg",
+    facts: {
+      gender: "femenino",
+      species: "humano",
+      age: 32,
+      city: "Denver"
+    }
+  },
+  {
+    id: "kaine_parker_scarlet_spider",
+    name: "Kaine Parker",
+    shortDescription: "Un clon imperfecto de Peter Parker conocido como Scarlet Spider.",
+    description: "Kaine Parker es un clon imperfecto de Peter Parker creado por el villano Chacal. Inicialmente un antagonista, Kaine eventualmente busca redención y asume el manto de Scarlet Spider. Con habilidades similares a las de Spider-Man, pero más poderosas, lucha contra el crimen y su oscuro pasado. Su camino hacia la redención y su compleja relación con Peter lo hacen un personaje intrigante y profundo en el Spiderverse.",
+    imageUrl: "https://example.com/kaine_parker.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 28,
+      city: "Houston"
+    }
+  },
+  {
+    id: "otto_octavius_superior_spiderman",
+    name: "Otto Octavius",
+    shortDescription: "El Doctor Octopus que toma el manto de Spider-Man.",
+    description: "Otto Octavius, conocido como el Doctor Octopus, toma el manto de Spider-Man tras un intercambio de cuerpos con Peter Parker. Con la intención de demostrar ser un Spider-Man superior, Otto usa su intelecto y determinación para luchar contra el crimen. Aunque su enfoque es más brutal y calculador, su tiempo como Spider-Man le brinda una nueva perspectiva y redención. Su historia es una exploración única de la moralidad y el heroísmo en el Spiderverse.",
+    imageUrl: "https://example.com/otto_octavius.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 40,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "hobart_brown_spiderman",
+    name: "Hobart Brown",
+    shortDescription: "Spider-Man de un universo punk.",
+    description: "Hobart Brown, también conocido como Spider-Punk, proviene de un universo alternativo donde el punk rock y la resistencia son fundamentales. Con habilidades arácnidas y un espíritu rebelde, lucha contra el régimen opresivo de su mundo. Su valentía y determinación, junto con su amor por la música, lo convierten en un héroe único y revolucionario. Hobart representa la resistencia y el poder de la juventud en el Spiderverse.",
+    imageUrl: "https://example.com/hobart_brown.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 19,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "peni_parker_sp-dr",
+    name: "Peni Parker",
+    shortDescription: "Piloto del robot SP//dr en un universo alternativo.",
+    description: "Peni Parker es una joven que pilota el robot SP//dr en un universo alternativo. Tras la muerte de su padre, Peni asume el control del robot vinculado a una araña radiactiva. Con su inteligencia y habilidades, lucha contra el crimen y protege su ciudad. Su historia de coraje y responsabilidad, combinada con su conexión única con la tecnología, la hace un personaje fascinante y vital en el Spiderverse.",
+    imageUrl: "https://example.com/peni_parker.jpg",
+    facts: {
+      gender: "femenino",
+      species: "humano",
+      age: 14,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "anya_corazon_spidergirl",
+    name: "Anya Corazon",
+    shortDescription: "Conocida como Spider-Girl, tiene habilidades arácnidas únicas.",
+    description: "Anya Corazon, también conocida como Spider-Girl, es una heroína con habilidades arácnidas únicas. Tras ser salvada por la Sociedad Arácnida, Anya adquiere poderes que la convierten en una formidable luchadora contra el crimen. Su valentía, determinación y habilidades especiales la hacen una heroína destacada. Anya equilibra su vida como adolescente y superhéroe, enfrentando desafíos personales y luchando por la justicia.",
+    imageUrl: "https://example.com/anya_corazon.jpg",
+    facts: {
+      gender: "femenino",
+      species: "humano",
+      age: 16,
+      city: "Nueva York"
+    }
+  },
+  {
+    id: "spider_miles_spiderman",
+    name: "Miles Morales",
+    shortDescription: "El joven Spider-Man del universo principal.",
+    description: "Miles Morales es un joven que asume el manto de Spider-Man en el universo principal. Después de ser mordido por una araña genéticamente modificada, desarrolla habilidades similares a las de Peter Parker. Miles es un héroe decidido y valiente, que lucha por justicia y equidad, llevando el legado de Spider-Man a nuevos horizontes. Su historia de crecimiento y superación lo convierte en una inspiración para muchos.",
+    imageUrl: "https://example.com/miles_morales.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 16,
+      city: "Brooklyn"
+    }
+  },
+  {
+    id: "spider_menace",
+    name: "Menace",
+    shortDescription: "Villano y enemigo de Spider-Man con habilidades arácnidas.",
+    description: "Menace es un villano y enemigo de Spider-Man con habilidades arácnidas. Originalmente un aliado, Menace se convierte en un peligroso adversario debido a sus propios deseos de poder. Con una mezcla de fuerza, velocidad y habilidades arácnidas, representa una amenaza significativa. Su compleja relación con los héroes y su búsqueda de control lo convierten en un personaje intrigante y peligroso en el Spiderverse.",
+    imageUrl: "https://example.com/menace.jpg",
+    facts: {
+      gender: "masculino",
+      species: "humano",
+      age: 32,
+      city: "Nueva York"
+    }
+  }
+];
+
+
