@@ -15,7 +15,7 @@ export const renderItems = (data) => {
     
     //IMAGEN
     const personajeImagen = document.createElement('img');
-    personajeImagen.setAttribute('src', data.imageUrl);
+    personajeImagen.setAttribute('src', `https://robohash.org/${data.facts.age}`);
     personajeImagen.setAttribute('alt', data.name);
     li.appendChild(personajeImagen);
     
@@ -82,10 +82,6 @@ export const renderItems = (data) => {
     ddCity.setAttribute('itemprop', 'city');
     dl.appendChild(ddCity);
     ddCity.innerHTML = data.facts.city;
-
-
-
-
   }
 
   data.forEach(crearElemento);

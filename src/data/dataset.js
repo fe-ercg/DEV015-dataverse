@@ -5,7 +5,7 @@ export default [
     shortDescription: "El joven Spider-Man de Brooklyn.",
     description:
       "Miles Morales es un adolescente afro-latino de Brooklyn que se convierte en Spider-Man después de ser mordido por una araña radiactiva. Él lucha por encontrar su lugar en el mundo mientras equilibra su vida escolar, su familia y su responsabilidad como héroe. Con el tiempo, aprende a aceptar su papel y a dominar sus habilidades únicas. Miles posee habilidades similares a las de Peter Parker, como trepar paredes y el sentido arácnido, pero también puede volverse invisible y generar explosiones de veneno. Su valentía y determinación lo hacen un digno sucesor del manto de Spider-Man.",
-    imageUrl: "https://example.com/miles_morales.jpg",
+    imageUrl: "https://example.com/miles.jpg",
     facts: {
       gender: "Masculino",
       species: "Humano",
