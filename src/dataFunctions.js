@@ -7,3 +7,35 @@ export const example = () => {
 export const anotherExample = () => {
   return [];
 };
+
+export const filterData = (data, filterBy, value ) => {
+
+  if( filterBy ==='gender'){
+    if(value === 'masculino'){
+      const filterMasc = data.filter(item => item.facts[filterBy] === value);
+      return filterMasc;
+    } 
+    if(value === 'femenino'){
+      const filterFem = data.filter(item => item.facts[filterBy] === value);
+      return filterFem;
+    } 
+  }
+  
+  if( filterBy === 'age'){
+
+    if(value <= 20){
+      const menores20 = data.filter(item => item.facts[filterBy] <= value);
+      return menores20;
+    }
+    if(value > 20 && value <= 30){
+      const menores30 = data.filter(item => item.facts[filterBy] <= value && item.facts[filterBy] > 20 );
+      return menores30;
+    }
+    if(value > 30){
+      const mayores30 = data.filter(item => item.facts[filterBy] > value);
+      return mayores30;
+    }
+
+  }
+
+}
