@@ -16,29 +16,13 @@ filter.addEventListener("change", (event) => {
   const filterValue = event.target.value;
   let newData;
 
-  if (filterValue==='masculino') {
+  if (filterValue === "Masculino" || filterValue === "Femenino" ) {
     newData = filterData(data, "gender", filterValue);
-  } 
-  if (filterValue==='femenino') {
-    newData = filterData(data, "gender", filterValue);
-  } 
+  } else {
+    newData = filterData(data, "age", filterValue);
+  }
 
   render.innerHTML ='';
   render.appendChild(renderItems(newData));
 
 });
-
-// filter.addEventListener("change", (event) => {
-//   const filterValue = event.target.value;
-//   let newData;
-
-//   if (filterValue) {
-//     newData = filterData(data, "gender", filterValue);
-//   } else {
-//     newData = filterData(data, "age", filterValue);
-//   }
-
-//   render.innerHTML ='';
-//   render.appendChild(renderItems(newData));
-
-// });
