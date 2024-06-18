@@ -22,8 +22,14 @@
         <label for="sort">Ordenar por:</label>
         <select data-testid="select-sort" id="sort" name="sort">
           <option value="" disabled selected>Selecciona</option>
-          <option value="asc">Ascendente</option>
-          <option value="desc">Descendente</option>
+          <optgroup label="Por nombre">
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>
+          </optgroup>
+          <!-- <optgroup label="Por edad">
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>
+          </optgroup> -->
         </select>
       </div>
 
