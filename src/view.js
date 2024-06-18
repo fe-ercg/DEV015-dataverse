@@ -15,7 +15,7 @@ export const renderItems = (data) => {
     
     //IMAGEN
     const personajeImagen = document.createElement('img');
-    personajeImagen.setAttribute('src', `https://robohash.org/${data.facts.age}`);
+    personajeImagen.setAttribute('src', data.imageUrl);
     personajeImagen.setAttribute('alt', data.name);
     li.appendChild(personajeImagen);
     
