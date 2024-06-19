@@ -17,7 +17,6 @@ export const sortData = (data, sortBy, sortOrder) => {
 export const filterData = (data, filterBy, value) => {
   if (filterBy === "gender") {
     const filterGender = data.filter((item) => item.facts[filterBy] === value);
-    console.log(filterGender)
     return filterGender;
   }
 
