@@ -10,7 +10,6 @@ export const sortData = (data, sortBy, sortOrder) => {
     }
     return 0;
   });
-
   return dataOrder;
 };
 
