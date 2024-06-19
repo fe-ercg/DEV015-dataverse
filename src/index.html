@@ -19,7 +19,7 @@
     <nav class="controls">
 
       <div class="controls-sort">
-        <label for="sort">Ordenar por:</label>
+        <label for="sort-order">Ordenar por:</label>
         <select data-testid="select-sort" id="sort-order" name="name">
           <option value="" disabled selected>Selecciona</option>
           <optgroup label="Por nombre">
@@ -51,16 +51,12 @@
       </div>
 
       <button data-testid="button-clear">Reset</button>
-
-  
-
     </nav>
+    <div class="computeStats">
+      <button id="buttonStats">Mostrar estadisticas</button>
+    </div>
 
     <div id="root" class="box-characters">
-      <!-- corrige el test pero feo
-        <ul>
-          <li itemtype="Spiderverse" itemscope></li>
-        </ul> -->
     </div>
   </main>
   <footer>

@@ -1,6 +1,8 @@
 import { filterData, sortData } from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
 
+//FILTER TEST
+
 describe('filterData', () => {
 
   it('should Spiderman by gender and return the quantity of female', () => {
@@ -51,6 +53,7 @@ describe('filterData', () => {
   })
 })
 
+//SORT TEST
 describe('sortData', () => {
 
   it('Should Spiderman in ascending order and return the name of the first one in the list', () => {
@@ -68,6 +71,28 @@ describe('sortData', () => {
     const orderSpiderman = sortData(fakeData, 'name', 'asc');
 
     expect(orderSpiderman[4].name).toBe('Spider-Man J');
+  })
+  
+})
+
+describe('sortData', () => {
+
+  it('Should Spiderman in descending order and return the name of the first one in the list', () => {
+
+    const orderSpiderman = sortData(fakeData, 'name', 'desc');
+
+    expect(orderSpiderman[0].name).toBe('Spider-Woman IV');
+  })
+  
+})
+
+describe('sortData', () => {
+
+  it('Should Spiderman in desscending order and return the name of the seventh in the list', () => {
+
+    const orderSpiderman = sortData(fakeData, 'name', 'desc');
+
+    expect(orderSpiderman[7].name).toBe('Spider-Man 2211');
   })
   
 })
