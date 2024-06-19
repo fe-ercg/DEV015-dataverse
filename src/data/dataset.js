@@ -19,7 +19,7 @@ export default [
     shortDescription: "El Spider-Man original y mentor de Miles.",
     description:
       "Peter Parker es el Spider-Man original que sirve como mentor para Miles Morales. Después de años de luchar contra el crimen en Nueva York, Peter tiene una gran experiencia y conocimiento sobre lo que significa ser Spider-Man. A pesar de sus propios problemas personales, se esfuerza por guiar a Miles y ayudarlo a convertirse en un héroe responsable. Peter es conocido por su ingenio rápido y su determinación inquebrantable. Sus habilidades incluyen trepar paredes, una fuerza y agilidad mejoradas, y el famoso sentido arácnido. Es un líder natural y un héroe venerado.",
-    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718729776/11-spider-woman-may-parker_q7pkaz.webp",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718729776/02-Peter_Parker_k6yjvi.jpg",
     facts: {
       gender: "Masculino",
       species: "Humano",
@@ -33,7 +33,7 @@ export default [
     shortDescription: "Spider-Woman de un universo alternativo.",
     description:
       "Gwen Stacy es la Spider-Woman de su propio universo alternativo. Después de la muerte de su mejor amigo Peter Parker en su dimensión, Gwen asume la identidad de Spider-Woman para proteger a los inocentes y luchar contra el crimen. Es una baterista talentosa y una heroína fuerte e independiente. Gwen forma parte del equipo multiversal de Spider-Héroes que se unen para enfrentar amenazas comunes. Sus habilidades son similares a las de otros Spider-Personas, incluyendo trepar paredes, el sentido arácnido y una gran agilidad. Su valentía y compasión la destacan.",
-    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718729786/03-Gwen_Stacy_qoqj87.jpg",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718763482/gwen_stacy_mm6mqd.jpg",
     facts: {
       gender: "Femenino",
       species: "Humana",
@@ -89,7 +89,7 @@ export default [
     shortDescription: "La versión alternativa de Gwen Stacy como Spider-Woman.",
     description:
       "Spider-Gwen, también conocida como Ghost-Spider, es una versión alternativa de Gwen Stacy que se convierte en Spider-Woman en su dimensión. Después de ser mordida por una araña radiactiva, Gwen asume el manto de héroe y lucha contra el crimen mientras equilibra su vida personal y su carrera como músico. Es una luchadora ágil y poderosa con habilidades similares a las de otros Spider-Héroes. Su valentía y determinación la convierten en una líder nata. Gwen se une al equipo de Spider-Héroes multiversales para enfrentar amenazas que ponen en peligro a todos sus mundos.",
-    imageUrl: "https://example.com/spider_gwen.jpg",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718729786/03-Gwen_Stacy_qoqj87.jpg",
     facts: {
       gender: "Femenino",
       species: "Humana",
@@ -187,7 +187,7 @@ export default [
     shortDescription: "Julia Carpenter, la segunda Spider-Woman.",
     description:
       "Julia Carpenter, conocida como la segunda Spider-Woman, recibió sus poderes a través de un experimento gubernamental que involucraba extractos de plantas y veneno de araña. Sus habilidades incluyen fuerza mejorada, trepar paredes y la capacidad de crear telarañas psíquicas. Julia ha trabajado como miembro de varios equipos de superhéroes, incluyendo los Vengadores y los Guardianes de la Galaxia. Es una heroína experimentada y una luchadora valiente. Su dedicación a la justicia y sus habilidades únicas la convierten en una aliada importante en la lucha contra las amenazas que enfrenta el equipo de Spider-Héroes.",
-    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718729780/15-scarlet-spider-spider-man-across-the-spider-verse-thumb-2_ljvi8h.jpg",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718763484/Julia_Carpenter_la_segunda_Spider-Woman._laepa5.jpg",
     facts: {
       gender: "Femenino",
       species: "Humana",

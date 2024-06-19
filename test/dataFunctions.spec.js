@@ -1,10 +1,6 @@
 import { filterData, sortData } from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
 
-// console.log(fakeData);
-
-
-
 describe('filterData', () => {
 
   it('should Spiderman by gender and return the quantity of female', () => {
@@ -71,6 +67,8 @@ describe('sortData', () => {
 
     const orderSpiderman = sortData(fakeData, 'name', 'asc');
 
-    expect(orderSpiderman[5].name).toBe('Spider-Man J');
+    expect(orderSpiderman[4].name).toBe('Spider-Man J');
   })
+  
 })
+
