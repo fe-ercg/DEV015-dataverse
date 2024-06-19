@@ -48,7 +48,7 @@ filter.addEventListener("change", (event) => {
 //ORDER
 // funciona solo con filtro
 
-const sort = document.querySelector("#sort");
+const sort = document.querySelector("#sort-order");
 
 sort.addEventListener("change", (event) => {
   const sortValue = event.target.value;
