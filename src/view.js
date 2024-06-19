@@ -9,6 +9,7 @@ export const renderItems = (data) => {
     const li = document.createElement('li');
     li.setAttribute('itemtype', 'Spiderverse')
     li.setAttribute('itemscope', '');
+    li.setAttribute('data-id', data.id)
     li.classList.add('item-lista')
     ul.appendChild(li);
 
