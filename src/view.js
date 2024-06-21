@@ -10,15 +10,19 @@ export const renderItems = (data) => {
     li.setAttribute('itemtype', 'Spiderverse')
     li.setAttribute('itemscope', '');
     li.setAttribute('data-id', data.id)
+    li.setAttribute('data-id', data.id)
     li.classList.add('item-lista')
     ul.appendChild(li);
-
     
+
     //IMAGEN
-    const personajeImagen = document.createElement('img');
-    personajeImagen.setAttribute('src', data.imageUrl);
+
+    const personajeImagen = document.createElement('div');
+    personajeImagen.style.backgroundImage = `url(${data.imageUrl})`;
+    personajeImagen.classList.add('image')
     personajeImagen.setAttribute('alt', data.name);
     li.appendChild(personajeImagen);
+    
     
     //TEXTO-------------
     const dl = document.createElement('dl');
@@ -27,62 +31,45 @@ export const renderItems = (data) => {
     //NAME
     const dtNombre = document.createElement('dt');
     dl.appendChild(dtNombre);
-    dtNombre.innerHTML = 'Nombre: ';
+    dtNombre.innerHTML = data.name;
     
-    const ddNombre = document.createElement('dd');
-    ddNombre.setAttribute('itemprop', 'name');
-    dl.appendChild(ddNombre);
-    ddNombre.innerHTML = data.name;
     
-    //DESCRIPCION - CORTA
+    //DESCRIPCION - CORTA 
     const dtDescripcion = document.createElement('dt');
     dl.appendChild(dtDescripcion);
-    dtDescripcion.innerHTML = 'Descripcion: ';
-    
-    const ddDescripcion = document.createElement('dd');
-    ddDescripcion.setAttribute('itemprop', 'shortDescription');
-    dl.appendChild(ddDescripcion);
-    ddDescripcion.innerHTML = data.shortDescription;
-    
+    dtDescripcion.innerHTML = data.shortDescription;
+
+    //DIV para FACTS
+    const facts = document.createElement('div')
+    facts.classList.add('facts')
+    dl.appendChild(facts)
+
     //FACTS - GENERO
     const dtGender = document.createElement('dt');
-    dl.appendChild(dtGender);
-    dtGender.innerHTML = 'Genero: ';
+    facts.appendChild(dtGender);
+    dtGender.innerHTML = 'Genero: '+ data.facts.gender;
     
-    const ddGender = document.createElement('dd');
-    ddGender.setAttribute('itemprop', 'gender');
-    dl.appendChild(ddGender);
-    ddGender.innerHTML = data.facts.gender;
     
     //FACTS - ESPECIE
     const dtSpecies = document.createElement('dt');
-    dl.appendChild(dtSpecies);
-    dtSpecies.innerHTML = 'Especie: ';
+    facts.appendChild(dtSpecies);
+    dtSpecies.innerHTML = 'Especie: '+ data.facts.species;
     
-    const ddSpecies = document.createElement('dd');
-    ddSpecies.setAttribute('itemprop', 'species');
-    dl.appendChild(ddSpecies);
-    ddSpecies.innerHTML = data.facts.species;
+ 
     
     //FACTS - EDAD
     const dtAge = document.createElement('dt');
-    dl.appendChild(dtAge);
-    dtAge.innerHTML = 'Edad: ';
+    facts.appendChild(dtAge);
+    dtAge.innerHTML = 'Edad: '+ data.facts.age;
     
-    const ddAge = document.createElement('dd');
-    ddAge.setAttribute('itemprop', 'age');
-    dl.appendChild(ddAge);
-    ddAge.innerHTML = data.facts.age;
+  
     
     //FACTS - CIUDAD
     const dtCity = document.createElement('dt');
-    dl.appendChild(dtCity);
-    dtCity.innerHTML = 'Ciudad: ';
+    facts.appendChild(dtCity);
+    dtCity.innerHTML = 'Ciudad: '+ data.facts.city;
     
-    const ddCity = document.createElement('dd');
-    ddCity.setAttribute('itemprop', 'city');
-    dl.appendChild(ddCity);
-    ddCity.innerHTML = data.facts.city;
+   
   }
 
   data.forEach(crearElemento);
