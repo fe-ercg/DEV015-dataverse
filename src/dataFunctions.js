@@ -1,6 +1,8 @@
 // SORT
 export const sortData = (data, sortBy, sortOrder) => {
-  const dataOrder = data.sort((a, b) => {
+
+  const dataOrder = data.map((item) => item);
+  dataOrder.sort((a, b) => {
     if (a[sortBy] < b[sortBy]) {
       return sortOrder === "asc" ? -1 : 1;
     }
@@ -43,22 +45,22 @@ export const computeStats = (data, type) => {
   const genderStats = data.reduce(
     (acumulador, item) => {
       const gender = item.facts[type];
-      if(!acumulador[gender]){
+      if (!acumulador[gender]) {
         acumulador[gender] = 1;
       } else {
         acumulador[gender] += 1;
       }
-      
+
       return acumulador
     }, {}
   );
-  
+
   const totalSpiders = data.length;
-  
+
   const porcentajes = Object.keys(genderStats).reduce((acumulador, item) => {
-    acumulador[item] = (genderStats[item]/totalSpiders * 100).toFixed(1) + "%";
+    acumulador[item] = (genderStats[item] / totalSpiders * 100).toFixed(1) + "%";
     return acumulador;
   }, {});
-  
+
   return porcentajes, genderStats;
 };
