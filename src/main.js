@@ -1,4 +1,4 @@
-import { filterData, sortData, computeStats } from "./dataFunctions.js";
+import { filterData, sortData, computeStats, averageStats } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 
 import data from "./data/dataset.js";
@@ -68,8 +68,15 @@ buttonReset.addEventListener("click", function () {
 const buttonStats = document.querySelector("#buttonStats");
 
 buttonStats.addEventListener("click", function () {
+  const dataFemenino = filterData(data, 'gender', 'Femenino')
+  const dataMasculino = filterData(data, 'gender', 'Masculino')
+  const ny = filterData(data, 'city', 'Nueva York')
+  
+  console.log(computeStats(dataFemenino, data)); 
+  console.log(computeStats(dataMasculino, data)); 
+  console.log(computeStats(ny, data)); 
+  console.log(averageStats(data)); 
 
-  console.log(computeStats(data, "gender")); 
-  console.log(computeStats(data, "age")); 
-  console.log(computeStats(data, "city")); 
+ 
+
 })

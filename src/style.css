@@ -225,7 +225,7 @@ button:hover{
     ul {
         flex-direction: row;
         flex-wrap: wrap;      
-        width: 80%;
+        width: 95%;
         margin: 0 auto;
     }
 
