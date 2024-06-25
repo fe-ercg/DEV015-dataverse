@@ -37,30 +37,89 @@ export const filterData = (data, filterBy, value) => {
       return mayores30;
     }
   }
+
+  if (filterBy === 'city'){
+    if (value === 'Nueva York'){
+      const ny = data.filter((item) => item.facts[filterBy] === value);
+      return ny
+    } else {
+      const others = data.filter((item) => item.facts[filterBy] !== value)
+      return others
+    }
+
+  }
+
+
+
 };
 
-//STATS
+//STATS PORCENTAJES
+export const computeStats = (data, dataTotal) => {
+  
+  const percentage = (data.length / dataTotal.length) * 100 ;
+  return percentage.toFixed(2);
+  
+}
 
-export const computeStats = (data, type) => {
-  const genderStats = data.reduce(
-    (acumulador, item) => {
-      const gender = item.facts[type];
-      if (!acumulador[gender]) {
-        acumulador[gender] = 1;
-      } else {
-        acumulador[gender] += 1;
-      }
+//PROMEDIO DE EDAD
 
-      return acumulador
-    }, {}
-  );
+export const averageStats = (data) => {
+  
+  const average = data.reduce((acumulador, item) => {
+    return acumulador + item.facts['age']
+  } ,0 )
+  return (average /data.length).toFixed()
 
-  const totalSpiders = data.length;
+}
 
-  const porcentajes = Object.keys(genderStats).reduce((acumulador, item) => {
-    acumulador[item] = (genderStats[item] / totalSpiders * 100).toFixed(1) + "%";
-    return acumulador;
-  }, {});
 
-  return porcentajes, genderStats;
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// genderstats retorna objeto con los generos con las cantidades que hay ({femenino, 9}{masculino, 15})
+// const genderStats = data.reduce(
+//   (acumulador, item) => {
+//     const tipoDeFacts = item.facts[type];
+//     if (!acumulador[tipoDeFacts]) {
+//       acumulador[tipoDeFacts] = 1;
+//     } else {
+//       acumulador[tipoDeFacts] += 1;
+//     }
+
+//     return acumulador
+//   },
+// );
+
+//convierte en objeto genderstats en un array solo con los generos
+ 
+// recorre el arraystats y los llena con el valor del genderstats  y lo convierte en porcentajes
+//   const porcentajes = genderStats.reduce((acumulador, item) => {
+//     acumulador[item] = (genderStats[item] / 24 * 100).toFixed(1) + "%";
+//     return acumulador;
+//   }, {});
+  
+//   return porcentajes;
+//   console.log(genderStats)
+// };

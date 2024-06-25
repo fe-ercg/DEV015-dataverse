@@ -1,4 +1,4 @@
-import { filterData, sortData, computeStats } from "./dataFunctions.js";
+import { filterData, sortData, computeStats, averageStats } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 
 import data from "./data/dataset.js";
@@ -66,10 +66,40 @@ buttonReset.addEventListener("click", function () {
 
 //STATS
 const buttonStats = document.querySelector("#buttonStats");
+const showStats = document.querySelector("#showStats");
 
 buttonStats.addEventListener("click", function () {
+  //ESTADISTICAS DE GENERO----------------------------------------------------------------------------
+  const dataFemenino = filterData(data, 'gender', 'Femenino');
+  
+  const divGender = document.createElement('div');
+  divGender.classList.add('stats');
+  divGender.innerHTML = "<p>El <span>" + computeStats(dataFemenino, data) + "%</span> son del genero Femenino</p>";
+  showStats.appendChild(divGender);
+  //ESTADISTICAS DE CITY----------------------------------------------------------------------------
+  
+  const ny = filterData(data, 'city', 'Nueva York');
+  
+  const divCity = document.createElement('div');
+  divCity.classList.add('stats');
+  divCity.innerHTML = "<p>El <span>" + computeStats(ny, data) + "%" + "</span> viven en la ciudad de Nueva York</p>";
+  showStats.appendChild(divCity);
+  
+  
+  //ESTADISTICAS DE EDAD----------------------------------------------------------------------------
+  
+  const age = averageStats(data);
 
-  console.log(computeStats(data, "gender")); 
-  console.log(computeStats(data, "age")); 
-  console.log(computeStats(data, "city")); 
+  const divAge = document.createElement('div');
+  divAge.classList.add('stats');
+  divAge.innerHTML = "<p>La edad promedio de los Spider Man es <span>" + age + "</span> años </p>";
+  showStats.appendChild(divAge);
+
+  if (showStats.style.display === 'flex') {
+    showStats.style.display = 'none';
+    showStats.innerHTML = "";
+  } else {
+    showStats.style.display = 'flex';
+  }
+
 })

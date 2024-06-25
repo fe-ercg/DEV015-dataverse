@@ -1,7 +1,7 @@
-import { filterData, sortData } from '../src/dataFunctions.js';
+import { filterData, sortData, computeStats, averageStats } from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
 
-//FILTER TEST
+//FILTER TEST ------------------------------------------------------------------------------------------------------
 
 describe('filterData', () => {
 
@@ -53,7 +53,7 @@ describe('filterData', () => {
   })
 })
 
-//SORT TEST
+//SORT TEST ------------------------------------------------------------------------------------------------------------------------
 describe('sortData', () => {
 
   it('Should Spiderman in ascending order and return the name of the first one in the list', () => {
@@ -96,4 +96,53 @@ describe('sortData', () => {
   })
   
 })
+
+//COMPUTE STATS ---------------------------------------------------------------------------------------------
+
+describe('computeStats', () => {
+
+  it('should show the total percentage of female spider-man', () => {
+
+    const percentageGender = computeStats(filterData(fakeData, 'gender', 'Femenino'), fakeData);
+
+    expect(percentageGender).toBe('40.00');
+  })
+  
+})
+
+describe('computeStats', () => {
+
+  it('should show the total percentage of male spider-man', () => {
+
+    const percentageGender = computeStats(filterData(fakeData, 'gender', 'Masculino'), fakeData);
+
+    expect(percentageGender).toBe('60.00');
+  })
+  
+})
+
+describe('computeStats', () => {
+
+  it('should show the total percentage of New York city spider-man', () => {
+
+    const percentageCity = computeStats(filterData(fakeData, 'city', 'Nueva York'), fakeData);
+
+    expect(percentageCity).toBe('50.00');
+  })
+  
+})
+
+//AVERAGE STATS ---------------------------------------------------------------------------------------------
+
+describe('averageStats', () => {
+
+  it('should show the total average age of spider-man', () => {
+
+    const averageAge = averageStats(fakeData);
+
+    expect(averageAge).toBe('25');
+  })
+  
+})
+
 

@@ -5,7 +5,7 @@ export default [
     shortDescription: "El joven Spider-Man de Brooklyn.",
     description:
       "Miles Morales es un adolescente afro-latino de Brooklyn que se convierte en Spider-Man después de ser mordido por una araña radiactiva. Él lucha por encontrar su lugar en el mundo mientras equilibra su vida escolar, su familia y su responsabilidad como héroe. Con el tiempo, aprende a aceptar su papel y a dominar sus habilidades únicas. Miles posee habilidades similares a las de Peter Parker, como trepar paredes y el sentido arácnido, pero también puede volverse invisible y generar explosiones de veneno. Su valentía y determinación lo hacen un digno sucesor del manto de Spider-Man.",
-    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718729777/01-Miles-Morales-Spider-Man_vhxjua.webp",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1719354547/Spider-Man_Across_the_Spider-Verse_poster_030_textless_fv9dgq.webp",
     facts: {
       gender: "Masculino",
       species: "Humano",
@@ -159,7 +159,7 @@ export default [
     shortDescription: "Miguel O'Hara, el Spider-Man del futuro.",
     description:
       "Spider-Man 2099, cuyo verdadero nombre es Miguel O'Hara, es el Spider-Man del futuro en el año 2099. Es un genetista que accidentalmente se infunde ADN de araña, adquiriendo habilidades arácnidas. Miguel posee fuerza mejorada, garras retráctiles y la capacidad de ver en la oscuridad. Trabaja para proteger la ciudad de Nueva York en un futuro distópico y tecnológicamente avanzado. Miguel es un héroe valiente y decidido, luchando contra corporaciones corruptas y amenazas tecnológicas. Su conocimiento del futuro y su avanzada tecnología lo convierten en un miembro crucial del equipo de Spider-Héroes.",
-    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718729778/12-Spider-Man_2099_oue4j7.jpg",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1719354546/champion-spider-man-2099-720x720_h7tahx.jpg",
     facts: {
       gender: "Masculino",
       species: "Humano",
@@ -313,7 +313,7 @@ export default [
     shortDescription: "Miles Morales en la línea Ultimate.",
     description:
       "Spider-Man Ultimate es Miles Morales en la línea Ultimate del universo Marvel. Después de la muerte de Peter Parker en su dimensión, Miles toma el manto de Spider-Man para honrar su legado. Sus habilidades incluyen fuerza mejorada, trepar paredes, el sentido arácnido, invisibilidad y explosiones de veneno. Miles es un joven valiente y decidido que lucha por proteger su ciudad y sus seres queridos. Su historia de crecimiento y aceptación de su papel como héroe lo convierten en un personaje inspirador. Miles aporta una nueva perspectiva y energía al legado de Spider-Man y al equipo de Spider-Héroes.",
-    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718729811/23-Spider-Man_Ultimate_z0jkbx.webp",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1719354545/UltimateSpiderman_akxf5t.jpg",
     facts: {
       gender: "Masculino",
       species: "Humano",
