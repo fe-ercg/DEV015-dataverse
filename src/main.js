@@ -66,17 +66,40 @@ buttonReset.addEventListener("click", function () {
 
 //STATS
 const buttonStats = document.querySelector("#buttonStats");
+const showStats = document.querySelector("#showStats");
 
 buttonStats.addEventListener("click", function () {
-  const dataFemenino = filterData(data, 'gender', 'Femenino')
-  const dataMasculino = filterData(data, 'gender', 'Masculino')
-  const ny = filterData(data, 'city', 'Nueva York')
+  //ESTADISTICAS DE GENERO----------------------------------------------------------------------------
+  const dataFemenino = filterData(data, 'gender', 'Femenino');
   
-  console.log(computeStats(dataFemenino, data)); 
-  console.log(computeStats(dataMasculino, data)); 
-  console.log(computeStats(ny, data)); 
-  console.log(averageStats(data)); 
+  const divGender = document.createElement('div');
+  divGender.classList.add('stats');
+  divGender.innerHTML = "<p>El <span>" + computeStats(dataFemenino, data) + "%</span> son del genero Femenino</p>";
+  showStats.appendChild(divGender);
+  //ESTADISTICAS DE CITY----------------------------------------------------------------------------
+  
+  const ny = filterData(data, 'city', 'Nueva York');
+  
+  const divCity = document.createElement('div');
+  divCity.classList.add('stats');
+  divCity.innerHTML = "<p>El <span>" + computeStats(ny, data) + "%" + "</span> viven en la ciudad de Nueva York</p>";
+  showStats.appendChild(divCity);
+  
+  
+  //ESTADISTICAS DE EDAD----------------------------------------------------------------------------
+  
+  const age = averageStats(data);
 
- 
+  const divAge = document.createElement('div');
+  divAge.classList.add('stats');
+  divAge.innerHTML = "<p>La edad promedio de los Spider Man es <span>" + age + "</span> años </p>";
+  showStats.appendChild(divAge);
+
+  if (showStats.style.display === 'flex') {
+    showStats.style.display = 'none';
+    showStats.innerHTML = "";
+  } else {
+    showStats.style.display = 'flex';
+  }
 
 })

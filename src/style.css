@@ -46,14 +46,15 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: end;
-    margin: 4% 2%;
-    
-    
-    label{
-        color: #171717;
-        font-weight: bold;
-        font-size: 2rem;
-    }
+    width: 100%;
+    background-color: rgba(217, 217, 217, 0.6);
+    padding-top: 1rem;
+  
+}
+label{
+    color: #171717;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 select{
@@ -77,16 +78,48 @@ button{
 }
 
 .computeStats{
-    margin: 1rem;
+    background-color: rgba(217, 217, 217, 0.6);
 }
 
 #buttonStats{
+    font-size: 2rem;
+    margin: 1.5rem;
     background-color: #112858;
     padding: 0 1rem;
     display: inline-block;
     transform: skew(-30deg);
 }
 
+#showStats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+    ;
+}
+.stats{
+   /*  background-color: #294990;
+    border: 5px solid #1e6bad; */
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    background-color: #112858;
+    max-width: 19%;
+    flex: 30%;
+    padding: 1.5rem;
+    border-radius:10px;   
+}
+
+p{
+    margin: 0;
+    gap: 1rem;
+    color: #E7E7EC;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+span{
+    color: #e6c647;
+    font-size: 1.5rem;
+}
 .box-characters {
     margin: 1rem;
 }
@@ -170,16 +203,27 @@ button:hover{
 /* ------------------------MEDIAQUERIE TABLET---------------------------*/
 
 @media (min-width: 768px) {
-    .controls {
-        font-size: 1.4rem;
+    label{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #171717;
     }
+    select{
+        font-size: 1.2rem;
+        border-left: 5px solid #870e0c;
+        border-bottom: 5px solid #870e0c;
+    } 
     button{
-        font-size: 1.4rem;
+        font-size: 1rem;
+        border-left: 5px solid #171717;
+        border-bottom: 5px solid #171717;
     }
     #buttonStats{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        border-left: 5px solid #171717;
+        border-bottom: 5px solid #171717;
     }
-}
+} 
 
 /* ------------------------MEDIAQUERIE PC---------------------------*/
 @media (min-width: 1024px) {
@@ -191,16 +235,15 @@ button:hover{
     
     .controls{
         justify-content: center;
-        margin: 2%;
         gap: 2rem;
         
-        label{
-            font-size: 1.7rem;
-            font-weight: bold;
-            color: #171717;
-        }
+        
     }
-
+    label{
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #171717;
+    }
     select{
         font-size: 1.7rem;
         border-left: 5px solid #870e0c;
@@ -216,6 +259,7 @@ button:hover{
     }
 
     #buttonStats{
+        
         padding: 0.3rem 1rem;
         height: auto;
         width: 20rem;
@@ -253,40 +297,3 @@ button:hover{
         gap:0.5rem;
     }
 }
-
-/*
-
-Para tablets (ancho entre 600px) 
-@media (min-width: 768px) {
-    
-
-    ul {
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0;
-        width: 100%;
-        gap: 2rem;
-    }
-
- 
-    .controls {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-
-    }
-
-}
-
-Para pantallas grandes (ancho mayor a 900px) 
-@media (min-width: 1024px) {
-   
-
-    ul {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-}*/
