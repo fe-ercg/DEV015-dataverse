@@ -2,7 +2,6 @@
     color: #E7E7EC;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-
 header {
     width: 100%;
     background-color: rgba(217, 217, 217, 0.6);
@@ -12,7 +11,7 @@ header {
 }
 
 img{
-    height: 10rem;
+    height: 7rem;
     width: auto;
     margin: 4%;
 }
@@ -23,7 +22,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Carter One", system-ui;
 }
 
@@ -39,13 +38,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    width: auto;
 }
 
 .controls {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: end;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     width: 100%;
     background-color: rgba(217, 217, 217, 0.6);
     padding-top: 1rem;
@@ -54,16 +54,16 @@ body {
 label{
     color: #171717;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 select{
-    font-size: 2rem;
-    width: 12rem;
+    font-size: 1.2rem;
+    width: 8rem;
     color: #E7E7EC;
     background-color: #171717;
-    border-left: 10px solid#870e0c;
-    border-bottom: 10px solid#870e0c;
+    border-left: 5px solid#870e0c;
+    border-bottom: 5px solid#870e0c;
 }
 
 select option{
@@ -76,13 +76,13 @@ select optgroup{
     color: #e6c647;
 }
 button{
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: center;
     width: auto;
     height: auto;
     background-color: #870e0c;
-    border-left: 10px solid #171717;
-    border-bottom: 10px solid #171717;
+    border-left: 5px solid #171717;
+    border-bottom: 5px solid #171717;
     /* padding: 0 1rem; */
 }
 
@@ -91,15 +91,15 @@ button{
 }
 
 #buttonStats{
-    font-size: 2rem;
-    margin: 1.5rem;
+    font-size: 1.2rem;
+    margin: 1rem;
     background-color: #112858;
     padding: 0 1rem;
     display: inline-block;
     transform: skew(-30deg);
     
-    text-align: left;
-    clip-path: polygon(0% 0%, 100% 0%, 85% 75%, 0% 100%); 
+    /* text-align: left;
+    clip-path: polygon(0% 0%, 100% 0%, 85% 75%, 0% 100%);  */
 }
 
 #showStats{
@@ -174,13 +174,13 @@ ul {
 }
 
 .name{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 2%;
     font-family: "Carter One", system-ui;
 }
 
 .descripcion{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin: 5% 7%;
 }
 
@@ -193,12 +193,12 @@ ul {
 }
 
 .label{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #E7E7EC;
 }
 
 .value{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .item-lista:hover{
@@ -216,6 +216,10 @@ button:hover{
 /* ------------------------MEDIAQUERIE TABLET---------------------------*/
 
 @media (min-width: 768px) {
+    .controls{
+        flex-direction: row;
+        justify-content: center;
+    }
     label{
         font-size: 1.2rem;
         font-weight: bold;
