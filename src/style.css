@@ -97,6 +97,9 @@ button{
     padding: 0 1rem;
     display: inline-block;
     transform: skew(-30deg);
+    
+    text-align: left;
+    clip-path: polygon(0% 0%, 100% 0%, 85% 75%, 0% 100%); 
 }
 
 #showStats{
