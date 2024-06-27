@@ -47,11 +47,13 @@ L@s usuari@s necesitan ver estadísticas (*Datos Curuisos*) sobre la personajes,
 ## 4. Promp para generar los datos
 
 Utilizamos ChatGPT para generar los datos que usaremos con el siguient promp el cual editamos y fuimos mejorando segun las pruebas arrojadas por los test.
+
 ![promp spiderverse](https://res.cloudinary.com/db3qclbrk/image/upload/v1719523450/image_pckjlm.png)
 
 ## 5. Diseño de la Interfaz de usuario
 
 Realizamos el prototipo de alta fidelidad en base a las historias de usuarias y lo mejoramos de acuerdo al feedback recibido.
+
 ![prototipo para movil](https://res.cloudinary.com/db3qclbrk/image/upload/v1719523450/image_1_zha5xj.png)
 
 ![prototipo para pc](https://res.cloudinary.com/db3qclbrk/image/upload/v1719523563/image_2_tcqh3a.png)
@@ -67,6 +69,7 @@ Realizamos el prototipo de alta fidelidad en base a las historias de usuarias y 
   - El botón “Reset” al presionarlo limpiaba la data y la volvía a la forma original, pero al ser usado nuevamente tomaba el ultimo filtro. 
   **Solución**: En el código colocamos una línea para limpiar la data filtrada almacenada que se mantenía en el botón de ordenar. 
 
-***Equipo de Trabajo***
-[Anyerlin Rodriguez](https://github.com/Angiers18/DEV015-dataverse)
-[Fernanda Castillo](https://github.com/fe-ercg)
+### ***Equipo de Trabajo***
+
+- [Anyerlin Rodriguez](https://github.com/Angiers18/DEV015-dataverse)
+- [Fernanda Castillo](https://github.com/fe-ercg)
