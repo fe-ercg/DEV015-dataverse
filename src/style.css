@@ -87,6 +87,7 @@ select {
     background-color: #171717;
     border-left: 5px solid#870e0c;
     border-bottom: 5px solid#870e0c;
+    border-radius: 0;
 }
 
 select option {
