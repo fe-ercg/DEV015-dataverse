@@ -119,8 +119,4 @@ burger.addEventListener('click', function(){
   }
 
   boxButtoms.parentNode.insertBefore(nav, boxButtoms.nextSibling)
-  
-
-
-
 })
