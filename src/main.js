@@ -3,11 +3,11 @@ import { renderItems } from "./view.js";
 
 import data from "./data/dataset.js";
 
-// Trae la info de la funcion render items
+// Trae la info de la funcion render items-----------------------------------------------------------------
 const render = document.querySelector("#root");
 render.appendChild(renderItems(data));
 
-//FILTRO
+//FILTRO----------------------------------------------------------------------------------------------------
 const filter = document.querySelector("#filter");
 let newFilterData;
 
@@ -20,12 +20,12 @@ filter.addEventListener("change", (event) => {
     newFilterData = filterData(data, "age", filterValue);
   }
 
+  sort.value = "";
   render.innerHTML = "";
   render.appendChild(renderItems(newFilterData));
-  console.log(newFilterData);
 });
 
-//SORT
+//SORT----------------------------------------------------------------------------------------------------
 const sort = document.querySelector("#sort-order");
 
 sort.addEventListener("change", (event) => {
@@ -48,12 +48,12 @@ sort.addEventListener("change", (event) => {
       orderData = sortData(data, "name", sortValue);
     }
   }
-
+  
   render.innerHTML = "";
   render.appendChild(renderItems(orderData));
 });
 
-// BOTON RESET
+// BOTON RESET---------------------------------------------------------------------------------------
 const buttonReset = document.querySelector("button[data-testid='button-clear']");
 
 buttonReset.addEventListener("click", function () {
@@ -69,6 +69,7 @@ const buttonStats = document.querySelector("#buttonStats");
 const showStats = document.querySelector("#showStats");
 
 buttonStats.addEventListener("click", function () {
+
   //ESTADISTICAS DE GENERO----------------------------------------------------------------------------
   const dataFemenino = filterData(data, 'gender', 'Femenino');
   
@@ -76,8 +77,8 @@ buttonStats.addEventListener("click", function () {
   divGender.classList.add('stats');
   divGender.innerHTML = "<p>El <span>" + computeStats(dataFemenino, data) + "%</span> son del genero Femenino</p>";
   showStats.appendChild(divGender);
+
   //ESTADISTICAS DE CITY----------------------------------------------------------------------------
-  
   const ny = filterData(data, 'city', 'Nueva York');
   
   const divCity = document.createElement('div');
@@ -87,19 +88,39 @@ buttonStats.addEventListener("click", function () {
   
   
   //ESTADISTICAS DE EDAD----------------------------------------------------------------------------
-  
   const age = averageStats(data);
-
+  
   const divAge = document.createElement('div');
   divAge.classList.add('stats');
   divAge.innerHTML = "<p>La edad promedio de los Spider Man es <span>" + age + "</span> años </p>";
   showStats.appendChild(divAge);
-
+  
+  //MUESTRA LAS ESTADISTICAS ----------------------------------------------------------------------------
   if (showStats.style.display === 'flex') {
     showStats.style.display = 'none';
     showStats.innerHTML = "";
   } else {
     showStats.style.display = 'flex';
   }
+
+})
+
+//FUNCIONALIDAD DE BOTON HAMBURGUESA----------------------------------------------------------------------
+
+const burger = document.querySelector("#burger");
+const nav = document.querySelector("#nav");
+const boxButtoms = document.querySelector("#boxButtoms");
+
+burger.addEventListener('click', function(){
+  if (nav.style.display === 'flex') {
+    nav.style.display = 'none';
+  } else {
+    nav.style.display = 'flex';
+  }
+
+  boxButtoms.parentNode.insertBefore(nav, boxButtoms.nextSibling)
+  
+
+
 
 })

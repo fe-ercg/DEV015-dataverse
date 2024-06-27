@@ -28,16 +28,15 @@ export default [
     },
   },
   {
-    id: "gwen_stacy_003",
-    name: "Gwen Stacy",
-    shortDescription: "Spider-Woman de un universo alternativo.",
-    description:
-      "Gwen Stacy es la Spider-Woman de su propio universo alternativo. Después de la muerte de su mejor amigo Peter Parker en su dimensión, Gwen asume la identidad de Spider-Woman para proteger a los inocentes y luchar contra el crimen. Es una baterista talentosa y una heroína fuerte e independiente. Gwen forma parte del equipo multiversal de Spider-Héroes que se unen para enfrentar amenazas comunes. Sus habilidades son similares a las de otros Spider-Personas, incluyendo trepar paredes, el sentido arácnido y una gran agilidad. Su valentía y compasión la destacan.",
-    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718763482/gwen_stacy_mm6mqd.jpg",
+    id: "spider_girl_anya_003",
+    name: "Anya Corazon",
+    shortDescription: "Una joven heroína con poderes arácnidos.",
+    description: "Anya Corazon, también conocida como Spider-Girl, es una joven heroína con habilidades arácnidas obtenidas a través de un ritual místico. Anya lucha contra el crimen y las injusticias mientras equilibra su vida como estudiante. Su historia está llena de valentía y autodescubrimiento, y representa la diversidad en el mundo de los superhéroes. Anya demuestra que cualquiera, sin importar sus orígenes, puede ser un héroe si tiene el valor y la determinación necesarios, y que el heroísmo es una cualidad que puede encontrarse en todas las personas, sin importar su edad o antecedentes.",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1719441146/Spider-Girl__Anya_zqzkmx.jpg",
     facts: {
       gender: "Femenino",
       species: "Humana",
-      age: 17,
+      age: 16,
       city: "Nueva York",
     },
   },
@@ -75,7 +74,7 @@ export default [
     shortDescription: "El Spider-Man de una dimensión de dibujos animados.",
     description:
       "Spider-Ham es el Spider-Man de una dimensión de dibujos animados, donde los animales antropomórficos son comunes. Su verdadero nombre es Peter Porker, y es una parodia humorística de Spider-Man. A pesar de su apariencia cómica, Spider-Ham es un héroe valiente y capaz. Sus habilidades incluyen trepar paredes, el sentido arácnido y una gran agilidad. Su estilo de lucha incorpora elementos de comedia física, y su sentido del humor aligera muchas situaciones tensas. Aporta un toque de humor y ligereza al equipo de Spider-Héroes, mostrando que el heroísmo puede tener muchas formas.",
-    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718729777/06-spider-ham_i8nvut.jpg",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1719441460/champion-spider-ham_s4ufqu.jpg",
     facts: {
       gender: "Masculino",
       species: "Cerdo antropomórfico",
@@ -229,7 +228,7 @@ export default [
     shortDescription: "Pavitr Prabhakar, el Spider-Man de India.",
     description:
       "Pavitr Prabhakar es el Spider-Man de India, con una historia similar a la de Peter Parker, pero ambientada en el contexto cultural y social de la India. Después de recibir poderes de una figura mística, Pavitr se convierte en Spider-Man y lucha contra el crimen en su ciudad. Sus habilidades incluyen fuerza mejorada, trepar paredes y el sentido arácnido. Pavitr es un joven valiente y compasivo, decidido a proteger a sus seres queridos y su comunidad. Su enfoque único y su perspectiva cultural aportan una nueva dimensión al legado de Spider-Man. Es un miembro valioso del equipo de Spider-Héroes.",
-    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1718729783/17-spider-man-india-header_cbu1jx.webp",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1719446198/Spider-man_Pavitr_qdeoke.jpg",
     facts: {
       gender: "Masculino",
       species: "Humano",

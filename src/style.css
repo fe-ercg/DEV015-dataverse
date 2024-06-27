@@ -1,16 +1,18 @@
+
 * {
     color: #E7E7EC;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
 header {
     width: 100%;
     background-color: rgba(217, 217, 217, 0.6);
     margin: 0 auto;
     padding-bottom: 0.2rem;
-    
-}
 
-img{
+}
+/* IMAGEN PRINCIPAL DEL TITULO --------------------------------------------------------------------------------*/
+img {
     height: 7rem;
     width: auto;
     margin: 4%;
@@ -22,11 +24,18 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Carter One", system-ui;
 }
 
-footer{
+.footer {
+    color: #171717;
+    
+}
+
+footer {
+    background-color: rgba(217, 217, 217, 0.6);
+    padding: 2rem 0;
     width: 100%;
 }
 
@@ -34,48 +43,63 @@ body {
     margin: 0 auto;
     text-align: center;
     background-image: url("https://res.cloudinary.com/db3qclbrk/image/upload/v1719010056/fondo-1_1_xekjfk.png");
-    background-position: center ;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: auto;
 }
 
+/* BARRA NAV  --------------------------------------------------------------------------------*/
 .controls {
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     width: 100%;
     background-color: rgba(217, 217, 217, 0.6);
     padding-top: 1rem;
-  
+    padding-bottom: 1rem;
+
 }
-label{
+
+/* ETIQUETA DE LOS SELECT --------------------------------------------------------------------------------*/
+label {
     color: #171717;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-select{
+/* DIV DE LOS SELECT --------------------------------------------------------------------------------*/
+.select-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+select {
     font-size: 1.2rem;
-    width: 8rem;
+    width: 50%;
     color: #E7E7EC;
     background-color: #171717;
     border-left: 5px solid#870e0c;
     border-bottom: 5px solid#870e0c;
 }
 
-select option{
+select option {
     font-size: 1rem;
- 
 }
 
-select optgroup{
+select optgroup {
     font-size: 1rem;
     color: #e6c647;
 }
-button{
+
+/* BOTON DE RESET --------------------------------------------------------------------------------*/
+button {
     font-size: 1.2rem;
     text-align: center;
     width: auto;
@@ -86,31 +110,65 @@ button{
     /* padding: 0 1rem; */
 }
 
-.computeStats{
+/* DIV DE LOS BOTONES QUE MUESTRAN LAS ESTADISTICAS Y LA HAMBURGUESA ------------------------------*/
+.computeStats {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: rgba(217, 217, 217, 0.6);
+    padding: 0 1rem;
 }
 
-#buttonStats{
+/* DIV DEL BOTON HAMBURGUESA ------------------------------*/
+.burger-container {
+    width: auto;
+}
+
+/* BOTON HAMBURGUESA ------------------------------*/
+#burger {
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #112858;
+    border: none;
+    border-radius: 5px;
+}
+
+/* DIV DE LAS BARRAS DENTRO DE LA HAMBURGUESA ------------------------------*/
+.bar {
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #E7E7EC;
+    width: auto;
+    height: 3px;
+}
+
+/* BOTON DE LAS ESTADISTICAS ------------------------------*/
+#buttonStats {
     font-size: 1.2rem;
     margin: 1rem;
     background-color: #112858;
     padding: 0 1rem;
     display: inline-block;
     transform: skew(-30deg);
-    
+    width: auto;
+
+    /* CAMBIA LA FORMA DEL BOTON COMO ESTABA EN EL PROTOTIPO */
     /* text-align: left;
     clip-path: polygon(0% 0%, 100% 0%, 85% 75%, 0% 100%);  */
 }
 
-#showStats{
+/* DIV QUE APARECE CUANDO LE DAS AL BOTON DE LAS ESTADISTICAS ------------------------------*/
+#showStats {
     display: flex;
     flex-direction: row;
-    justify-content: space-around
-    ;
+    justify-content: space-around;
 }
-.stats{
-   /*  background-color: #294990;
-    border: 5px solid #1e6bad; */
+
+/* DIVS DE CADA ESTADISTICA--------------------------------------------------------*/
+.stats {
+    
     display: flex;
     align-items: center;
     margin: 2rem 0;
@@ -118,20 +176,23 @@ button{
     max-width: 19%;
     flex: 30%;
     padding: 1.5rem;
-    border-radius:10px;   
+    border-radius: 10px;
 }
 
-p{
+p {
     margin: 0;
     gap: 1rem;
     color: #E7E7EC;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
-span{
+
+span {
     color: #e6c647;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
+
+/* DIV CONTIENE EL UL QUE RENDERIZA LAS TARJETAS--------------------------------------------------------*/
 .box-characters {
     margin: 1rem;
 }
@@ -145,7 +206,8 @@ ul {
     gap: 2rem;
 }
 
-.item-lista{
+/* LI --------------------------------------------------------*/
+.item-lista {
     background-color: rgba(14, 14, 14, 0.9);
     list-style: none;
     display: flex;
@@ -157,7 +219,8 @@ ul {
     margin: 0 10%;
 }
 
-.image{
+/* IMAGEN DE LOS PERSONAJES --------------------------------------------------------*/
+.image {
     flex: 2;
     
     background-size: cover;
@@ -166,25 +229,27 @@ ul {
     border-radius: 23px 0 0 23px;
     margin-left: -1px;
     width: 80%;
-    }
-    
-.item-lista dl {
-    flex: 3;
-    font-weight: bold;
 }
 
-.name{
+/* AJUSTA TEXTO E IMAGEN DE LAS TARJETAS-------------------------------------------------*/
+.item-lista dl {
+    flex: 3;
+    
+}
+
+/* TEXTOS DE LAS TARJETAS-------------------------------------------------*/
+.name {
     font-size: 1.5rem;
     margin: 2%;
     font-family: "Carter One", system-ui;
 }
 
-.descripcion{
+.descripcion {
     font-size: 1.2rem;
     margin: 5% 7%;
 }
-
-.facts{
+/* DIV DE LOS FACTS ------------------------------ */
+.facts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -192,89 +257,121 @@ ul {
     margin: 5%;
 }
 
-.label{
+.label {
     font-size: 1rem;
     color: #E7E7EC;
 }
 
-.value{
+.value {
     font-size: 1.3rem;
 }
 
-.item-lista:hover{
+/* CAMBIOS AL PASAR EL MOUSE-------------------------------------------------*/
+.item-lista:hover {
     transform: scale(1.05);
 }
 
-button:hover{
+button:hover {
     background-color: #112858;
 }
 
-#buttonStats:hover{
+#buttonStats:hover {
     background-color: #870e0c;
 }
+ 
 
 /* ------------------------MEDIAQUERIE TABLET---------------------------*/
 
 @media (min-width: 768px) {
-    .controls{
+
+    h2 {
+        font-size: 3rem;
+
+    }
+/* BARRA NAV  --------------------------------------------------------------------------------*/
+    .controls {
         flex-direction: row;
         justify-content: center;
     }
-    label{
+
+    /* SELECT --------------------------------------------------------------------------------*/
+    select {
+        font-size: 1.2rem;
+        border-left: 5px solid #870e0c;
+        border-bottom: 5px solid #870e0c;
+        width: auto;
+    }
+
+    label {
         font-size: 1.2rem;
         font-weight: bold;
         color: #171717;
     }
-    select{
-        font-size: 1.2rem;
-        border-left: 5px solid #870e0c;
-        border-bottom: 5px solid #870e0c;
-    } 
-    button{
-        font-size: 1rem;
-        border-left: 5px solid #171717;
-        border-bottom: 5px solid #171717;
-    }
-    #buttonStats{
-        font-size: 1.5rem;
-        border-left: 5px solid #171717;
-        border-bottom: 5px solid #171717;
-    }
-} 
+
+/* DIV DE LOS SELECT --------------------------------------------------------------------------------*/
+.select-box {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    
+}
+
+/* BOTON RESET --------------------------------------------------------------------------------*/
+button {
+    font-size: 1rem;
+    border-left: 5px solid #171717;
+    border-bottom: 5px solid #171717;
+}
+
+/* BOTON DE ESTADISTICAS --------------------------------------------------------------------------------*/
+#buttonStats {
+    font-size: 1.5rem;
+    border-left: 5px solid #171717;
+    border-bottom: 5px solid #171717;
+}
+}
 
 /* ------------------------MEDIAQUERIE PC---------------------------*/
 @media (min-width: 1024px) {
-    img{
+
+    /* IMAGEN PRINCIPAL DEL TITULO --------------------------------------------------------------------------------*/
+    img {
         height: 10%;
         width: 40%;
         margin: 1%;
     }
-    
-    .controls{
+    /* BARRA NAV  --------------------------------------------------------------------------------*/
+    .controls {
+        display: flex;
         justify-content: center;
         gap: 2rem;
-        
-        
+
     }
-    label{
+
+    label {
         font-size: 1.7rem;
         font-weight: bold;
         color: #171717;
     }
-    select{
+
+
+    select {
         font-size: 1.7rem;
         border-left: 5px solid #870e0c;
         border-bottom: 5px solid #870e0c;
+
     }
-    select option{
+
+    select option {
+        font-size: 1.3rem;
+    }
+
+    select optgroup {
         font-size: 1.3rem;
     }
     
-    select optgroup{
-        font-size: 1.3rem;
-    }
-    
-    button{
+    /* BARRA RESET  --------------------------------------------------------------------------------*/
+    button {
         font-size: 1.7rem;
         width: auto;
         height: auto;
@@ -282,41 +379,79 @@ button:hover{
         border-bottom: 5px solid #171717;
     }
 
-    #buttonStats{
+    /* OCULTA EL BOTON DE HAMBURGUESA --------------------------------------------------------------------------------*/
+    .burger-container {
+        display: none;
+    }
+    
+    /* DIV DE LOS BOTONES QUE MUESTRAN LAS ESTADISTICAS Y LA HAMBURGUESA ------------------------------ */
+    .computeStats {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* BOTON QUE MUESTRA LAS ESTADISTICAS ------------------------------ */
+    #buttonStats {
         
         padding: 0.3rem 1rem;
         height: auto;
-        width: 20rem;
         text-align: left;
     }
-
+    
+    /* DIV QUE MUESTRA Y OCULTA LAS ESTADISTICAS------------------------------ */
+    #showStats {
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    /* DIVS DE CADA ESTADISTICA------------------------------ */
+    .stats {
+        max-width: 15rem;
+        flex: 30%;
+        
+    }
+    
+    p {
+        font-size: 2rem;
+    }
+    
+    span {
+        font-size: 2.3rem;
+    }
+    
     ul {
         flex-direction: row;
-        flex-wrap: wrap;      
+        flex-wrap: wrap;
         width: 95%;
         margin: 0 auto;
     }
-
-    .item-lista{
+    
+    /* LI ------------------------------ */
+    .item-lista {
         flex: 25%;
         margin: 0 1%;
         max-width: 35%;
     }
-
-    .name{
+    
+    /* TEXTO DE LAS TARJETAS ------------------------------ */
+    .name {
         font-size: 1.6rem;
     }
-    .descripcion{
+    
+    .descripcion {
         font-size: 1.3rem;
     }
-
-    .label{
+    
+    .label {
         font-size: 1rem;
     }
-    .value{
+    
+    .value {
         font-size: 1.2rem;
     }
-    .facts{
-        gap:0.5rem;
+    
+    /* DIV DE LOS FACTS ------------------------------ */
+    .facts {
+        gap: 0.5rem;
     }
 }

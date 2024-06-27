@@ -1,4 +1,4 @@
-// SORT
+// SORT-----------------------------------------------------------------------------------
 export const sortData = (data, sortBy, sortOrder) => {
 
   const dataOrder = data.map((item) => item);
@@ -14,7 +14,7 @@ export const sortData = (data, sortBy, sortOrder) => {
   return dataOrder;
 };
 
-// FILTRO
+// FILTRO---------------------------------------------------------------------------------
 export const filterData = (data, filterBy, value) => {
   if (filterBy === "gender") {
     const filterGender = data.filter((item) => item.facts[filterBy] === value);
@@ -53,7 +53,7 @@ export const filterData = (data, filterBy, value) => {
 
 };
 
-//STATS PORCENTAJES
+//STATS PORCENTAJES------------------------------------------------------------------
 export const computeStats = (data, dataTotal) => {
   
   const percentage = (data.length / dataTotal.length) * 100 ;
@@ -61,7 +61,7 @@ export const computeStats = (data, dataTotal) => {
   
 }
 
-//PROMEDIO DE EDAD
+//PROMEDIO DE EDAD---------------------------------------------------------------------
 
 export const averageStats = (data) => {
   
@@ -71,30 +71,6 @@ export const averageStats = (data) => {
   return (average /data.length).toFixed()
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
