@@ -272,6 +272,7 @@ ul {
 .item-lista:hover {
     transform: scale(1.05);
     transition: all 0.3s;
+    -webkit-transition: all 0.3s;
 }
 
 button:hover {
@@ -315,7 +316,6 @@ button:hover {
     display: flex;
     justify-content: center;
     width: auto;
-    
 }
 
 /* BOTON RESET --------------------------------------------------------------------------------*/
