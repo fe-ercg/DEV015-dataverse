@@ -454,4 +454,8 @@ button {
     .facts {
         gap: 0.5rem;
     }
+
+    .footer{
+        font-size: 1rem;
+    }
 }
