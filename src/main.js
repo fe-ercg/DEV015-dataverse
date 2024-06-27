@@ -60,6 +60,7 @@ buttonReset.addEventListener("click", function () {
   render.innerHTML = "";
   filter.value = "";
   sort.value = "";
+  newFilterData = "";
 
   render.appendChild(renderItems(data));
 });
