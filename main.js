@@ -120,20 +120,3 @@ burger.addEventListener('click', function(){
 
   boxButtoms.parentNode.insertBefore(nav, boxButtoms.nextSibling)
 })
-
-// GOOGLE CHARTS
-// console.log(google);
-function drawChart() {
-  const dataChart = new google.visualization.DataTable();
-  dataChart.addColumn("string", "Ciudad");
-  dataChart.addColumn("number", "Cantidad de Spiders");
-  dataChart.addRows(filterData(data, "age", 20));
-  const config = {
-    width: 400,
-    height: 400,
-  };
-  const cityChart = new google.visualization.PieChart(showStats);
-  cityChart.draw(dataChart, config);
-}
-google.charts.load("current", { packages: ["corechart"] });
-google.charts.setOnLoadCallback(drawChart);
