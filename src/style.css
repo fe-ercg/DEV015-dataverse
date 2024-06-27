@@ -87,6 +87,7 @@ select {
     background-color: #171717;
     border-left: 5px solid#870e0c;
     border-bottom: 5px solid#870e0c;
+    border-radius: 0;
 }
 
 select option {
@@ -133,14 +134,15 @@ button {
     background-color: #112858;
     border: none;
     border-radius: 5px;
+    padding: 0;
 }
 
 /* DIV DE LAS BARRAS DENTRO DE LA HAMBURGUESA ------------------------------*/
 .bar {
     border-radius: 5px;
-    margin: 5px;
+    margin: 5px auto;
     background-color: #E7E7EC;
-    width: auto;
+    width: 60%;
     height: 3px;
 }
 
@@ -269,6 +271,7 @@ ul {
 /* CAMBIOS AL PASAR EL MOUSE-------------------------------------------------*/
 .item-lista:hover {
     transform: scale(1.05);
+    transition: all 0.3s;
 }
 
 button:hover {
@@ -278,7 +281,6 @@ button:hover {
 #buttonStats:hover {
     background-color: #870e0c;
 }
- 
 
 /* ------------------------MEDIAQUERIE TABLET---------------------------*/
 
