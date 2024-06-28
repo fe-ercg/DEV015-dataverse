@@ -32,7 +32,7 @@ export default [
     name: "Anya Corazon",
     shortDescription: "Una joven heroína con poderes arácnidos.",
     description: "Anya Corazon, también conocida como Spider-Girl, es una joven heroína con habilidades arácnidas obtenidas a través de un ritual místico. Anya lucha contra el crimen y las injusticias mientras equilibra su vida como estudiante. Su historia está llena de valentía y autodescubrimiento, y representa la diversidad en el mundo de los superhéroes. Anya demuestra que cualquiera, sin importar sus orígenes, puede ser un héroe si tiene el valor y la determinación necesarios, y que el heroísmo es una cualidad que puede encontrarse en todas las personas, sin importar su edad o antecedentes.",
-    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1719441146/Spider-Girl__Anya_zqzkmx.jpg",
+    imageUrl: "https://res.cloudinary.com/db3qclbrk/image/upload/v1719585727/anya_t5cfw8.jpg",
     facts: {
       gender: "Femenino",
       species: "Humana",
