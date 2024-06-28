@@ -72,8 +72,6 @@ export const averageStats = (data) => {
 
 }
 
-
-
 // genderstats retorna objeto con los generos con las cantidades que hay ({femenino, 9}{masculino, 15})
 // const genderStats = data.reduce(
 //   (acumulador, item) => {

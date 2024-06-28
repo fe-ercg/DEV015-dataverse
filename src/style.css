@@ -153,7 +153,6 @@ button {
     background-color: #112858;
     padding: 0 1rem;
     display: inline-block;
-    transform: skew(-30deg);
     width: auto;
 
     /* CAMBIA LA FORMA DEL BOTON COMO ESTABA EN EL PROTOTIPO */
