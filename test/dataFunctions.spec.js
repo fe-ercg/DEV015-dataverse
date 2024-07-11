@@ -7,7 +7,7 @@ describe('filterData', () => {
 
   it('should Spiderman by gender and return the quantity of female', () => {
 
-    const totalSpiderman = filterData(fakeData, 'gender', 'Femenino');
+    const totalSpiderman = filterData(fakeData, 'gender', 'F');
 
     expect(totalSpiderman.length).toBe(4);
   })
@@ -17,7 +17,7 @@ describe('filterData', () => {
 
   it('should Spiderman by gender and return the quantity of male', () => {
 
-    const totalSpiderman = filterData(fakeData, 'gender', 'Masculino');
+    const totalSpiderman = filterData(fakeData, 'gender', 'M');
 
     expect(totalSpiderman.length).toBe(6);
   })
@@ -27,7 +27,7 @@ describe('filterData', () => {
 
   it('should Spiderman by age and return the quantity of under 20', () => {
 
-    const totalSpiderman = filterData(fakeData, 'age', '20');
+    const totalSpiderman = filterData(fakeData, 'age', '1');
 
     expect(totalSpiderman.length).toBe(5);
   })
@@ -37,7 +37,7 @@ describe('filterData', () => {
 
   it('should Spiderman by age and return the quantity of under 30', () => {
 
-    const totalSpiderman = filterData(fakeData, 'age', '30');
+    const totalSpiderman = filterData(fakeData, 'age', '2');
 
     expect(totalSpiderman.length).toBe(2);
   })
@@ -47,7 +47,7 @@ describe('filterData', () => {
 
   it('should Spiderman by age and return the quantity of greather than 30', () => {
 
-    const totalSpiderman = filterData(fakeData, 'age', '31');
+    const totalSpiderman = filterData(fakeData, "age", "3").concat(filterData(fakeData, "age", "4"));
 
     expect(totalSpiderman.length).toBe(3);
   })
@@ -103,7 +103,7 @@ describe('computeStats', () => {
 
   it('should show the total percentage of female spider-man', () => {
 
-    const percentageGender = computeStats(filterData(fakeData, 'gender', 'Femenino'), fakeData);
+    const percentageGender = computeStats(filterData(fakeData, 'gender', 'F'), fakeData);
 
     expect(percentageGender).toBe('40.00');
   })
@@ -114,7 +114,7 @@ describe('computeStats', () => {
 
   it('should show the total percentage of male spider-man', () => {
 
-    const percentageGender = computeStats(filterData(fakeData, 'gender', 'Masculino'), fakeData);
+    const percentageGender = computeStats(filterData(fakeData, 'gender', 'M'), fakeData);
 
     expect(percentageGender).toBe('60.00');
   })
@@ -125,7 +125,7 @@ describe('computeStats', () => {
 
   it('should show the total percentage of New York city spider-man', () => {
 
-    const percentageCity = computeStats(filterData(fakeData, 'city', 'Nueva York'), fakeData);
+    const percentageCity = computeStats(filterData(fakeData, 'city', 'N'), fakeData);
 
     expect(percentageCity).toBe('50.00');
   })
