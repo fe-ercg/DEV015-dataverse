@@ -12,12 +12,21 @@ const filter = document.querySelector("#filter");
 let newFilterData;
 
 filter.addEventListener("change", (event) => {
-  const filterValue = event.target.value;
 
-  if (filterValue === "Masculino" || filterValue === "Femenino") {
+  const filterValue = event.target.value;
+  // console.log(filterData(data, "gender", "F"));
+  // console.log(filterData(data, "age", "2"));
+  // console.log(filterData(data, "age", "4"));
+  
+  
+  if (filterValue === "M" || filterValue === "F") {
     newFilterData = filterData(data, "gender", filterValue);
-  } else {
+  } 
+  if( filterValue === '1' || filterValue === '2'){
     newFilterData = filterData(data, "age", filterValue);
+  } 
+  if ( filterValue === '3'){
+    newFilterData = filterData(data, "age", "3").concat(filterData(data, "age", "4"));
   }
 
   sort.value = "";
@@ -72,7 +81,7 @@ const showStats = document.querySelector("#showStats");
 buttonStats.addEventListener("click", function () {
 
   //ESTADISTICAS DE GENERO----------------------------------------------------------------------------
-  const dataFemenino = filterData(data, 'gender', 'Femenino');
+  const dataFemenino = filterData(data, 'gender', 'F');
   
   const divGender = document.createElement('div');
   divGender.classList.add('stats');
@@ -80,7 +89,7 @@ buttonStats.addEventListener("click", function () {
   showStats.appendChild(divGender);
 
   //ESTADISTICAS DE CITY----------------------------------------------------------------------------
-  const ny = filterData(data, 'city', 'Nueva York');
+  const ny = filterData(data, 'city', 'N');
   
   const divCity = document.createElement('div');
   divCity.classList.add('stats');
